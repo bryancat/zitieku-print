@@ -4,10 +4,12 @@
 
 支持姓名练字、汉字描红、拼音、笔顺、基础笔画、控笔线条和古诗字帖。当前版本 **0.5.1**。
 
-## 复制给 AI，开始安装
+## 推荐：复制指令，发给 WorkBuddy
+
+WorkBuddy 的仓库获取、技能添加、对话生成与官网使用流程已完成真实环境验证。复制以下指令发给 WorkBuddy，按提示授权后即可开始，无需手动下载文件。
 
 ```text
-请从 https://github.com/bryancat/zitieku-print 安装“字帖库 AI 练字助手”Skill，优先使用 v0.5.1 版本。
+请在 WorkBuddy 中帮我完成以下操作：请从 https://github.com/bryancat/zitieku-print 安装“字帖库 AI 练字助手”Skill，优先使用 v0.5.1 版本。
 先确认当前环境支持技能安装、联网获取文件和 Python 3 脚本运行；按本平台的技能安装机制获取完整文件，保留 SKILL.md、scripts、references 和 agents，不要只读取说明就声称安装成功，也不要覆盖已有同名技能。
 安装后确认技能可被宿主发现和启用，运行 scripts/create_link.py --list-templates，再用 basic-strokes 方案验证能生成 configuration_ready 和完整字帖链接。
 如果环境不支持安装或脚本执行，请明确告诉我限制。验证成功后，开始帮我安排这次练字，只问还缺少的必要信息。
@@ -19,7 +21,7 @@
 
 需要宿主支持 Agent Skills、联网获取仓库、文件操作和 Python 3 执行。生成链接只使用 Python 标准库，不需要字帖库 API Key。
 
-仓库地址让具备相应能力的 AI 自行获取文件，不能让普通聊天窗口自动获得技能安装能力。各平台的安装入口、权限与账号要求以实际客户端为准；本仓库发布不代表 WorkBuddy、扣子、Kimi Work 等平台已经通过兼容性验收。
+仓库地址让具备相应能力的 AI 自行获取文件，不能让普通聊天窗口自动获得技能安装能力。各平台的安装入口、权限与账号要求以实际客户端为准；WorkBuddy 已完成真实环境验证；其他 Agent 需按其实际能力使用，不能据此推断其他平台均已通过兼容性验收。
 
 ## 安装验证
 
@@ -50,6 +52,8 @@ request.json 的非个人信息测试内容：
 - agents/：宿主展示配置。
 
 ## 官网与备用下载
+
+只有 Agent 无法访问 GitHub，或环境仅支持手动导入时，才需要下载备用 ZIP。
 
 - [产品介绍](https://zitieku.com/ai-zitie.html)
 - [安装帮助](https://zitieku.com/ai-zitie/start/)
