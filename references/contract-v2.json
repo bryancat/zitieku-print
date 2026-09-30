@@ -19,6 +19,21 @@
     "developer",
     "mcp"
   ],
+  "hosts": [
+    "workbuddy",
+    "claude",
+    "chatgpt",
+    "codex",
+    "cursor",
+    "grok",
+    "kimi",
+    "doubao",
+    "yuanbao",
+    "qwen",
+    "deepseek",
+    "coze",
+    "other"
+  ],
   "fields": [
     "template_id",
     "text",
@@ -33,7 +48,8 @@
     "trace_style",
     "trace_density",
     "practice_gradient",
-    "source"
+    "source",
+    "host"
   ],
   "presets": [
     {
