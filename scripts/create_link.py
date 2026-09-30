@@ -38,12 +38,19 @@ ERROR_MESSAGES = {
 }
 
 class SkillInputError(ValueError):
-    def __init__(self, code):
+    def __init__(self, code, field=None, allowed_values=None):
         self.code = code
+        self.field = field or {
+            'MISSING_NAME':'student_name', 'NAME_TOO_LONG':'student_name',
+            'MISSING_CONTENT':'text', 'INVALID_CLASS':'student_class',
+            'INVALID_STUDENT_ID':'student_id', 'INVALID_TITLE':'title',
+            'INVALID_SOURCE':'source',
+        }.get(code)
+        self.allowed_values = allowed_values
         super().__init__(ERROR_MESSAGES.get(code, '输入不符合当前字帖规则。'))
 
-def fail(code):
-    raise SkillInputError(code)
+def fail(code, field=None, allowed_values=None):
+    raise SkillInputError(code, field, allowed_values)
 
 def compact_document(document):
     c, e, a, l, g, s, h, f = (document[key] for key in ('content','exercise','annotations','layout','grid','style','header','footer'))
@@ -62,21 +69,77 @@ def encode_document(document):
     if 'studentId' not in fields: printable['content']['studentId'] = ''
     if not printable['header']['enabled']: printable['header']['fields'] = []
     json_text = json.dumps(compact_document(printable), ensure_ascii=False, separators=(',', ':'))
-    if len(json_text) > 20000: fail('CONTENT_TOO_LONG')
+    if len(json_text.encode('utf-16-le')) // 2 > 20000: fail('CONTENT_TOO_LONG')
     raw = json_text.encode()
     compressor = zlib.compressobj(level=9, wbits=-15)
     token = '3.' + base64.urlsafe_b64encode(compressor.compress(raw) + compressor.flush()).decode().rstrip('=')
     if len(token) > CONTRACT['limits']['tokenCharacters']: fail('LINK_TOO_LONG')
     return token
 
+# Keep discovery and request validation on the same supported-field definitions.
+TUNING = {
+    'grid_type': ('gridType', ['mi', 'tian', 'square'], 'INVALID_GRID'),
+    'columns': ('columns', list(range(4, 17)), 'INVALID_COLUMNS'),
+    'orientation': ('orientation', ['portrait', 'landscape'], 'INVALID_ORIENTATION'),
+    'pinyin': ('pinyin', [False, True], 'INVALID_PINYIN'),
+    'trace_style': ('traceStyle', ['solid', 'hollow'], 'INVALID_TRACE_STYLE'),
+    'trace_density': ('traceDensity', ['light', 'normal', 'dark'], 'INVALID_TRACE_DENSITY'),
+    'practice_gradient': ('practiceGradient', ['classic', 'half', 'all-trace'], 'INVALID_PRACTICE_GRADIENT'),
+}
+
+def effective_settings(document):
+    return {
+        'grid_type': document['grid']['type'], 'columns': document['layout']['columns'],
+        'orientation': document['layout']['orientation'],
+        'pinyin': document['annotations']['pinyin'] == 'tone',
+        'trace_style': document['exercise']['traceStyle'],
+        'trace_density': document['exercise']['traceDensity'],
+        'practice_stages': deepcopy(document['exercise']['stages']),
+    }
+
+def describe_template(template_id):
+    preset = next((p for p in CONTRACT['presets'] if p['id'] == template_id), None)
+    if preset is None:
+        fail('UNKNOWN_TEMPLATE', 'template_id', [p['id'] for p in CONTRACT['presets']])
+    kind = preset['document']['content']['kind']
+    fields = {'template_id': {'allowed_values': [template_id]}, 'title': {'type': 'string'},
+              'source': {'allowed_values': CONTRACT['sources']}}
+    required = ['template_id']
+    example = {'template_id': template_id}
+    if kind == 'name':
+        required.append('student_name')
+        fields.update({name: {'type': 'string'} for name in ['student_name', 'student_class', 'student_id']})
+        fields['student_name']['max_characters'] = CONTRACT['limits']['nameCharacters']
+        example['student_name'] = '林小禾'
+    elif kind != 'foundations':
+        required.append('text')
+        fields['text'] = {'type': 'string', 'non_empty': True}
+        example['text'] = '春夏秋冬'
+    for field, (control, values, _) in TUNING.items():
+        if control in preset['capabilities']['controls']:
+            fields[field] = {'allowed_values': ['portrait'] if field == 'orientation' and kind == 'name' else values}
+    return {'id': template_id, 'name': preset['name'], 'required_fields': required,
+            'fields': fields, 'defaults': effective_settings(preset['document']), 'example': example}
+
 def create_link(request):
     if not isinstance(request, dict): fail('INVALID_INPUT')
-    if set(request) - set(CONTRACT['fields']): fail('UNKNOWN_FIELD')
+    unknown = sorted(set(request) - set(CONTRACT['fields']))
+    if unknown: fail('UNKNOWN_FIELD', unknown[0], CONTRACT['fields'])
     preset = next((item for item in CONTRACT['presets'] if item['id'] == request.get('template_id')), None)
-    if preset is None: fail('UNKNOWN_TEMPLATE')
+    if preset is None: fail('UNKNOWN_TEMPLATE', 'template_id', [p['id'] for p in CONTRACT['presets']])
     document = deepcopy(preset['document'])
     content = document['content']; layout = document['layout']; exercise = document['exercise']
     controls = set(preset['capabilities']['controls']); kind = content['kind']
+    description = describe_template(preset['id'])
+    for field in request:
+        if field not in description['fields']:
+            code = TUNING[field][2] if field in TUNING else 'INCOMPATIBLE_CONTENT'
+            if field == 'columns': code = 'UNSUPPORTED_COLUMNS'
+            fail(code, field, [])
+        if field in TUNING:
+            allowed = description['fields'][field]['allowed_values']
+            if not any(type(request[field]) is type(value) and request[field] == value for value in allowed):
+                fail(TUNING[field][2], field, allowed)
     if kind == 'name':
         name = request.get('student_name')
         if not isinstance(name, str) or not name.strip(): fail('MISSING_NAME')
@@ -124,21 +187,24 @@ def create_link(request):
             [{'role':'master','count':1},{'role':'trace','count':'fill'}])
     document['footer']['reprint']=False
     source=request.get('source','skill')
-    if source not in CONTRACT['sources']: fail('INVALID_SOURCE')
+    if source not in CONTRACT['sources']: fail('INVALID_SOURCE', 'source', CONTRACT['sources'])
     token=encode_document(document)
     return {'status':'configuration_ready','schema_version':'3','template_id':preset['id'],'template_name':preset['name'],
         'url':f'https://zitieku.com/zitie-shengchengqi.html?from={source}#reprint={token}',
         'content_length':len(content['studentName'] if kind=='name' else content['text']),'render_verified':False,
-        'settings':{'grid_type':document['grid']['type'],'columns':layout['columns'],'orientation':layout['orientation']},
+        'settings':effective_settings(document),
         'warnings':['请在网站预览中检查页面容量、字形、拼音和笔顺数据，再下载或打印。']}
 
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--input', help='UTF-8 JSON 输入文件；省略时从标准输入读取')
+    parser.add_argument('--describe-template', help='查询一个方案的支持字段、取值、默认设置和最小示例')
     parser.add_argument('--list-templates', action='store_true', help='列出当前可用字帖方案')
     args=parser.parse_args()
     try:
-        if args.list_templates:
+        if args.describe_template:
+            result=describe_template(args.describe_template)
+        elif args.list_templates:
             result=[{'id':p['id'],'mode':p['document']['content']['kind'],'name':p['name'],'description':p['description']} for p in CONTRACT['presets']]
         else:
             raw=Path(args.input).read_text(encoding='utf-8') if args.input else sys.stdin.read(100001)
@@ -146,7 +212,11 @@ def main():
             result=create_link(json.loads(raw))
         print(json.dumps(result,ensure_ascii=False));return 0
     except SkillInputError as error:
-        print(json.dumps({'status':'error','error_code':error.code,'message':str(error)},ensure_ascii=False));return 1
+        print(json.dumps({'status':'error','error_code':error.code,'message':str(error),
+            'field':error.field,'allowed_values':error.allowed_values,
+            'hint':('请减少内容或按用户需求拆分后重试。' if error.code in ('CONTENT_TOO_LONG','LINK_TOO_LONG','INPUT_TOO_LONG')
+                    else '请删除当前方案不支持的字段；可用 --describe-template 查询方案。' if error.allowed_values == []
+                    else '请按字段类型和允许值修正；可用 --describe-template 查询方案。')},ensure_ascii=False));return 1
     except json.JSONDecodeError:
         error=SkillInputError('INVALID_JSON')
         print(json.dumps({'status':'error','error_code':error.code,'message':str(error)},ensure_ascii=False));return 1
