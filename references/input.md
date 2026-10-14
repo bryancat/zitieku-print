@@ -10,7 +10,7 @@ Skill 使用规范字帖文档与 v3 链接协议。`contract-v2.json` 由 `js/w
 
 | 字段 | 要求 |
 |---|---|
-| `template_id` | 必填；来自 `--list-templates` 返回的 13 个方案编号 |
+| `template_id` | 必填；来自 `--list-templates` 返回的方案编号 |
 | `text` | 汉字、笔顺、古诗方案必填；非空字符串，至少含一个汉字，保留原文 |
 | `student_name` | 姓名方案必填，最多 6 个字符；不能与 `text` 同时使用 |
 | `student_class` | 姓名方案可选；仅在用户主动提供并希望显示时使用 |
@@ -28,7 +28,17 @@ Skill 使用规范字帖文档与 v3 链接协议。`contract-v2.json` 由 `js/w
 
 未声明或不适用于当前方案的字段会报错，不会静默忽略。不要发送字体、课本版本、固定行数、指定页数或自定义跟踪参数。不要主动索要班级和学号。
 
+## 生字综合练习
+
+`standard-study` 用于每字一行的生字学习表：拼音、范字、部首、笔画数、结构与累积笔顺对照，随后描红和自写。默认纵向 A4、12 列蓝色田字格，可调整拼音、格型、列数、方向、描红形态和浓度以及行内梯度。每行的范字和信息栏占两列。
+
+需要扫码重打时，让用户在网站“重印设置”中开启二维码；不要向脚本发送 `reprint` 或 `reprint_enabled` 等未声明字段。网站的扫码链接保留综合练习类型和配置。
+
 ## 示例
+
+```json
+{"template_id":"standard-study","text":"长比巴把下个雨们问有半从"}
+```
 
 ```json
 {"template_id":"standard-copy","text":"春夏秋冬","grid_type":"tian","pinyin":true,"practice_gradient":"half"}

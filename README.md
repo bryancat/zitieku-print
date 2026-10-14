@@ -12,7 +12,7 @@
 
 AI 会帮你选练习、安排练法，并生成可在[字帖库官网](https://zitieku.com/ai-zitie.html)预览、调整、下载 PDF 和 A4 打印的字帖。
 
-支持姓名练字、汉字描红、拼音、笔顺、基础笔画、控笔线条和古诗字帖。日常安装使用 main 分支；版本标签（如 `v0.5.2`）用于固定和复现某个快照。
+支持姓名练字、汉字描红、拼音、笔顺、基础笔画、控笔线条和古诗字帖。日常安装使用 main 分支；版本标签（如 `v0.5.3`）用于固定和复现某个快照。
 
 ## 开始使用
 
@@ -71,13 +71,19 @@ python3 scripts/create_link.py --input request.json
 - references/：能力契约、输入说明和练习建议。
 - agents/：宿主展示配置。
 
+## 生字综合练习与扫码重打
+
+支持每字一行的“生字综合练习”：左侧拼音、范字、部首、笔画数及结构，上方累积笔顺，下方描红与自写。让 Agent 使用 `standard-study` 并提供要练的汉字即可。
+
+需要纸上扫码重打时，在网站“重印设置”中开启二维码后导出 PDF；扫码链接会恢复该模板与内容。
+
 ## 官网与备用下载
 
 只有 Agent 无法访问 GitHub，或环境仅支持手动导入时，才需要下载备用 ZIP。
 
 - [产品介绍](https://zitieku.com/ai-zitie.html)
 - [安装帮助](https://zitieku.com/ai-zitie/start/)
-- [可直接上传的扁平 ZIP](https://zitieku.com/downloads/zitieku-print-0.5.2.zip)
+- [可直接上传的扁平 ZIP](https://zitieku.com/downloads/zitieku-print-0.5.3.zip)
 - [问题反馈](https://github.com/bryancat/zitieku-print/issues)
 
 GitHub 自动生成的源码 ZIP 带仓库外层目录；若平台要求 ZIP 根目录直接包含 SKILL.md，请使用官网提供的扁平 ZIP。

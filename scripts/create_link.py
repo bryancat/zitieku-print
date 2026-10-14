@@ -11,7 +11,7 @@ from urllib.parse import urlencode
 import unicodedata
 import zlib
 
-SCRIPT_VERSION = '0.5.2'
+SCRIPT_VERSION = '0.5.3'
 CONTRACT = json.loads((Path(__file__).resolve().parents[1] / 'references/contract-v2.json').read_text(encoding='utf-8'))
 
 ERROR_MESSAGES = {
