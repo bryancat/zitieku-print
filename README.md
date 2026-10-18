@@ -8,11 +8,12 @@
 | “春夏秋冬做成带拼音的田字格” | 拼音田字格 |
 | “把这几个字做成描红，格子用米字格” | 汉字描红、田字格或米字格 |
 | “帮我把《静夜思》做成字帖” | 古诗字帖 |
+| “做一张先描笔顺、再描整字的认字卡” | 认字描写，笔顺可跨行 |
 | “孩子最近练什么比较合适？” | 基础笔画、控笔线条或适合的汉字练习 |
 
 AI 会帮你选练习、安排练法，并生成可在[字帖库官网](https://zitieku.com/ai-zitie.html)预览、调整、下载 PDF 和 A4 打印的字帖。
 
-支持姓名练字、汉字描红、拼音、笔顺、基础笔画、控笔线条和古诗字帖。日常安装使用 main 分支；版本标签（如 `v0.5.3`）用于固定和复现某个快照。
+支持姓名练字、汉字描红、拼音、笔顺、基础笔画、控笔线条和古诗字帖。日常安装使用 main 分支；版本标签（如 `v0.5.4`）用于固定和复现某个快照。
 
 ## 开始使用
 
@@ -71,6 +72,14 @@ python3 scripts/create_link.py --input request.json
 - references/：能力契约、输入说明和练习建议。
 - agents/：宿主展示配置。
 
+## 认字描写：先描笔顺，再描整字
+
+v0.5.4 新增 `standard-card`「认字描写」：左侧显示拼音、范字、部首、笔画和结构，右侧按笔顺逐格累积描写，第一行不够时继续第二行，之后整字描红，默认末行自写。笔画多时增加行数并自动分页，完整保留书写步骤。
+
+让 Agent 使用 `standard-card` 并提供练习汉字，例如“一二三上口”或“森鑫”。部首、笔画数与结构名称来自字库；缺笔顺资源时预览会提示，不应宣称已验证 PDF。
+
+[查看官网模板与真实样张](https://zitieku.com/templates/renzi-miaoxie/)
+
 ## 生字综合练习与扫码重打
 
 支持每字一行的“生字综合练习”：左侧拼音、范字、部首、笔画数及结构，上方累积笔顺，下方描红与自写。让 Agent 使用 `standard-study` 并提供要练的汉字即可。
@@ -83,7 +92,7 @@ python3 scripts/create_link.py --input request.json
 
 - [产品介绍](https://zitieku.com/ai-zitie.html)
 - [安装帮助](https://zitieku.com/ai-zitie/start/)
-- [可直接上传的扁平 ZIP](https://zitieku.com/downloads/zitieku-print-0.5.3.zip)
+- [可直接上传的扁平 ZIP](https://zitieku.com/downloads/zitieku-print-0.5.4.zip)
 - [问题反馈](https://github.com/bryancat/zitieku-print/issues)
 
 GitHub 自动生成的源码 ZIP 带仓库外层目录；若平台要求 ZIP 根目录直接包含 SKILL.md，请使用官网提供的扁平 ZIP。

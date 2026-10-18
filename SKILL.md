@@ -3,7 +3,7 @@ name: zitieku-print
 description: 用于字帖生成器、练字助手、儿童练字、姓名练字、拼音字帖、汉字描红、笔顺练习、基础笔画、控笔、古诗字帖、田字格或米字格、A4 打印字帖等需求，包括“给孩子做可打印姓名字帖”“做带拼音的田字格”“不知道孩子该练什么”等自然提问。不用于书写障碍诊断或书写评分。
 compatibility: 需要 Python 3 和本地脚本执行能力。生成链接仅使用标准库，不发起网络请求；打开、预览和导出字帖需要访问 zitieku.com。
 metadata:
-  version: "0.5.3"
+  version: "0.5.4"
 ---
 
 # 字帖库 AI 练字助手
@@ -29,6 +29,7 @@ metadata:
 | 先看范字、描红再自写 | `standard-copy` | 一范二描，其余自写 |
 | 整行描红 | `standard-trace` | 首格示范，其余描红 |
 | 半描半写 | `standard-repeat` | 示范、三格描红，再独立书写 |
+| 认字卡与三行书写 | `standard-card` | 左侧拼音、范字、部首、笔画和结构，右侧笔顺优先、余格整字描红，默认末行自写；笔顺可跨行，无大标题 |
 | 生字识记与书写综合练习 | `standard-study` | 左侧拼音、范字、部首、笔画数和结构，上方笔顺，下方描红与自写 |
 | 整字笔顺 | `practice-large` | 大格优先；明确要紧凑布局时用 `practice-compact` |
 | 古诗练习 | `poetry-full` | 上下对照用 `poetry-split`；四区梯度用 `poetry-quadrant` |

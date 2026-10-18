@@ -401,6 +401,92 @@
       }
     },
     {
+      "id": "standard-card",
+      "name": "认字描写",
+      "description": "左侧认字卡，先描笔顺、再描红与自写",
+      "kind": "characters",
+      "capabilities": {
+        "controls": [
+          "orientation",
+          "gridType",
+          "gridColor",
+          "header",
+          "footer",
+          "pinyin",
+          "practiceGradient",
+          "traceStyle",
+          "traceDensity",
+          "columns"
+        ]
+      },
+      "document": {
+        "version": 1,
+        "content": {
+          "kind": "characters",
+          "text": "",
+          "title": "",
+          "studentName": "",
+          "studentClass": "",
+          "studentId": "",
+          "foundationPattern": "strokes"
+        },
+        "exercise": {
+          "kind": "character-card",
+          "stages": [
+            {
+              "role": "master",
+              "count": 1
+            },
+            {
+              "role": "trace",
+              "count": 20
+            },
+            {
+              "role": "copy",
+              "count": "fill"
+            }
+          ],
+          "traceStyle": "solid",
+          "traceDensity": "normal"
+        },
+        "annotations": {
+          "pinyin": "tone",
+          "strokeCount": true,
+          "radical": true,
+          "structure": true
+        },
+        "layout": {
+          "paper": "A4",
+          "orientation": "portrait",
+          "flow": "row-per-character",
+          "columnDirection": "ltr",
+          "columns": 12,
+          "overflow": "paginate",
+          "poetryLayout": "full"
+        },
+        "grid": {
+          "type": "tian",
+          "color": "#70a58b"
+        },
+        "style": {
+          "fontId": "device-kaiti",
+          "masterColor": "#111111",
+          "traceColor": "#b8b8b8"
+        },
+        "header": {
+          "enabled": true,
+          "fields": [
+            "name"
+          ],
+          "showStars": false
+        },
+        "footer": {
+          "reprint": false,
+          "tip": ""
+        }
+      }
+    },
+    {
       "id": "practice-large",
       "name": "笔顺大格",
       "description": "逐笔示范，适合刚开始练字",

@@ -11,7 +11,7 @@ from urllib.parse import urlencode
 import unicodedata
 import zlib
 
-SCRIPT_VERSION = '0.5.3'
+SCRIPT_VERSION = '0.5.4'
 CONTRACT = json.loads((Path(__file__).resolve().parents[1] / 'references/contract-v2.json').read_text(encoding='utf-8'))
 
 ERROR_MESSAGES = {
@@ -248,6 +248,11 @@ def create_link(request):
         exercise['stages'] = [{'role':'master','count':1},{'role':'trace','count':max(1, layout['columns']//2-1)},{'role':'copy','count':'fill'}]
     elif gradient == 'all-trace':
         exercise['stages'] = [{'role':'master','count':1},{'role':'trace','count':'fill'}]
+    if exercise['kind'] == 'character-card':
+        width = layout['columns'] - 2
+        trace_count = 'fill' if gradient == 'all-trace' else width * 3 // 2 if gradient == 'half' else width * 2
+        exercise['stages'] = [{'role':'master','count':1},{'role':'trace','count':trace_count}]
+        if gradient != 'all-trace': exercise['stages'].append({'role':'copy','count':'fill'})
     document['footer']['reprint'] = False
     # Attribution only: never put names or worksheet text in the query string.
     query = {'from': request.get('source', 'skill'), 'v': SCRIPT_VERSION}
