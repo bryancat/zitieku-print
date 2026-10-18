@@ -13,7 +13,7 @@
 
 AI 会帮你选练习、安排练法，并生成可在[字帖库官网](https://zitieku.com/ai-zitie.html)预览、调整、下载 PDF 和 A4 打印的字帖。
 
-支持姓名练字、汉字描红、拼音、笔顺、基础笔画、控笔线条、数字书写和古诗字帖。日常安装使用 main 分支；版本标签（如 `v0.5.5`）用于固定和复现某个快照。
+支持姓名练字、汉字描红、拼音、笔顺、基础笔画、控笔线条、数字书写和古诗字帖。日常安装使用 main 分支；版本标签（如 `v0.5.6`）用于固定和复现某个快照。
 
 ## 开始使用
 
@@ -32,7 +32,7 @@ AI 会帮你选练习、安排练法，并生成可在[字帖库官网](https://
 1. **确认环境**：当前宿主支持技能安装、能联网获取文件、能运行 Python 3。任何一项不满足，直接按第 5 步处理。
 2. **获取完整文件**：按宿主的技能安装机制获取 main 分支内容，保留 `SKILL.md`、`scripts`、`references` 和 `agents`。遵循宿主的目录与权限规则，不猜测目录，不覆盖已有同名技能。
 3. **确认已启用**：确认宿主能发现并启用技能。只读取说明、没有真正添加，不算安装成功。
-4. **运行验证**：在技能目录运行 `python3 scripts/create_link.py --list-templates`，应返回当前版本的全部方案（v0.5.5 为 18 种）；再把 `{"template_id":"basic-strokes"}` 通过 JSON 文件或标准输入传给脚本，输出应为 `configuration_ready` 并包含完整网站链接。不要把用户内容拼进 shell 命令。
+4. **运行验证**：在技能目录运行 `python3 scripts/create_link.py --list-templates`，应返回当前版本的全部方案（v0.5.6 为 18 种）；再把 `{"template_id":"basic-strokes"}` 通过 JSON 文件或标准输入传给脚本，输出应为 `configuration_ready` 并包含完整网站链接。不要把用户内容拼进 shell 命令。
 5. **无法安装或运行脚本时**：如实告诉用户哪一步不可用。仍按 `SKILL.md` 的思路给出练习文字、格型、练法和停止建议，并提供 https://zitieku.com/zitie-shengchengqi.html 让用户手动制作。不编造预填链接，不声称已生成字帖。
 6. **验证通过后**：直接进入练字流程。结合已有对话只问还缺少的必要信息，推荐内容和练法，最后提供“查看并打印字帖”链接。
 
@@ -74,6 +74,8 @@ python3 scripts/create_link.py --input request.json
 
 ## 数字书写
 
+v0.5.6 将第三个数字方案 `numbers-copy` 调整为数字自由书写空格纸：无需输入 text，练习区只有田字格，不预填数字、描红、点阵或口诀。三个数字方案的姓名和日期手写区域均加宽。
+
 v0.5.5 新增数字综合、单个数字专项、描红与自写三个方案。数字位于田字格左半格，支持浅描与点阵。官网新增对应模板详情与真实样张，所有模板的 PDF 导出提升至 300 dpi。
 
 [查看数字书写模板](https://zitieku.com/templates/shuzi-shuxie/)
@@ -98,7 +100,7 @@ v0.5.4 新增 `standard-card`「认字描写」：左侧显示拼音、范字、
 
 - [产品介绍](https://zitieku.com/ai-zitie.html)
 - [安装帮助](https://zitieku.com/ai-zitie/start/)
-- [可直接上传的扁平 ZIP](https://zitieku.com/downloads/zitieku-print-0.5.5.zip)
+- [可直接上传的扁平 ZIP](https://zitieku.com/downloads/zitieku-print-0.5.6.zip)
 - [问题反馈](https://github.com/bryancat/zitieku-print/issues)
 
 GitHub 自动生成的源码 ZIP 带仓库外层目录；若平台要求 ZIP 根目录直接包含 SKILL.md，请使用官网提供的扁平 ZIP。

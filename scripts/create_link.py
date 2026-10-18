@@ -11,7 +11,7 @@ from urllib.parse import urlencode
 import unicodedata
 import zlib
 
-SCRIPT_VERSION = '0.5.5'
+SCRIPT_VERSION = '0.5.6'
 CONTRACT = json.loads((Path(__file__).resolve().parents[1] / 'references/contract-v2.json').read_text(encoding='utf-8'))
 
 ERROR_MESSAGES = {
@@ -164,7 +164,7 @@ def describe_template(template_id):
         fields.update({name: {'type': 'string'} for name in ['student_name', 'student_class', 'student_id']})
         fields['student_name']['max_characters'] = CONTRACT['limits']['nameCharacters']
         example['student_name'] = '林小禾'
-    elif kind != 'foundations':
+    elif kind != 'foundations' and preset['id'] != 'numbers-copy':
         required.append('text')
         fields['text'] = {'type': 'string', 'non_empty': True, 'requires_han': kind != 'numbers'}
         example['text'] = preset['document']['content']['text'] if kind == 'numbers' else '春夏秋冬'
@@ -211,7 +211,7 @@ def validate(request):
         else: check(len(name.strip()) <= CONTRACT['limits']['nameCharacters'], 'NAME_TOO_LONG')
         check(isinstance(request.get('student_class', ''), str), 'INVALID_CLASS')
         check(isinstance(request.get('student_id', ''), str), 'INVALID_STUDENT_ID')
-    elif kind != 'foundations':
+    elif kind != 'foundations' and preset['id'] != 'numbers-copy':
         text = request.get('text')
         if not isinstance(text, str) or not text.strip(): errors.append(SkillInputError('MISSING_CONTENT'))
         else:
@@ -235,7 +235,7 @@ def create_link(request):
         content['studentName'] = request['student_name'].strip()
         content['studentClass'] = request.get('student_class', '')
         content['studentId'] = request.get('student_id', '')
-    elif kind != 'foundations':
+    elif kind != 'foundations' and preset['id'] != 'numbers-copy':
         content['text'] = unicodedata.normalize('NFKC', request['text']) if kind == 'numbers' else request['text']
     if 'title' in request: content['title'] = request['title']
     if 'grid_type' in request: document['grid']['type'] = request['grid_type']

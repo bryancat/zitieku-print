@@ -129,7 +129,6 @@
         "header": {
           "enabled": true,
           "fields": [
-            "class",
             "name"
           ],
           "showStars": false
@@ -217,7 +216,6 @@
         "header": {
           "enabled": true,
           "fields": [
-            "class",
             "name"
           ],
           "showStars": false
@@ -230,8 +228,8 @@
     },
     {
       "id": "numbers-copy",
-      "name": "数字描红与自写",
-      "description": "少量描红，更多留白独立书写",
+      "name": "数字自由书写",
+      "description": "整页空白田字格，自由练习数字书写",
       "kind": "numbers",
       "capabilities": {
         "controls": [
@@ -240,15 +238,14 @@
           "gridColor",
           "header",
           "footer",
-          "columns",
-          "traceDensity"
+          "columns"
         ]
       },
       "document": {
         "version": 1,
         "content": {
           "kind": "numbers",
-          "text": "0123456789",
+          "text": "",
           "title": "",
           "studentName": "",
           "studentClass": "",
@@ -258,14 +255,6 @@
         "exercise": {
           "kind": "trace-copy",
           "stages": [
-            {
-              "role": "master",
-              "count": 1
-            },
-            {
-              "role": "trace",
-              "count": 2
-            },
             {
               "role": "copy",
               "count": "fill"
@@ -301,7 +290,6 @@
         "header": {
           "enabled": true,
           "fields": [
-            "class",
             "name"
           ],
           "showStars": false

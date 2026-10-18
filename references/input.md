@@ -58,7 +58,7 @@ Skill 使用规范字帖文档与 v3 链接协议。`contract-v2.json` 由 `js/w
 
 脚本返回状态、网址、方案编号、方案名称、实际设置、内容长度、是否已验证渲染和警告。覆盖设置后，以返回的 `settings` 为准，不根据方案名称猜测实际格型、列数或方向。`settings` 同时返回 `pinyin`、`trace_style`、`trace_density` 和实际 `practice_stages`；梯度以阶段角色和数量为准。参数错误时 `errors` 列出全部问题，每项含 `error_code`、`field` 和 `allowed_values`；顶层同时保留第一项和 `hint`。允许值为空数组表示该方案不支持这个字段；未知字段的允许值是当前方案支持的字段名。退出码 2 和 `INTERNAL_ERROR` 表示脚本自身故障，不是输入问题，不要反复改参数重试。
 
-数字方案使用田字格左半格，范字、浅描与点阵使用同一数字路径。`numbers-single` 只接受一个数字；数字内容错误返回 `INVALID_DIGITS` 或 `SINGLE_DIGIT_ONLY`。不支持数数、填空或加减法。
+数字综合与专项使用田字格左半格，范字、浅描与点阵使用同一数字路径。`numbers-copy` 为纯空格纸，不传 text；整页无预填数字或口诀。`numbers-single` 只接受一个数字；数字内容错误返回 `INVALID_DIGITS` 或 `SINGLE_DIGIT_ONLY`。不支持数数、填空或加减法。
 
 非数字方案的 `text` 没有汉字时返回 `NO_CJK_CONTENT`。网站会把每个非空白字符都排成练习内容，所以含英文、数字、表情，或在非古诗方案中含标点时，`warnings` 会提示；是否删除由用户决定。
 
