@@ -11,7 +11,7 @@ from urllib.parse import urlencode
 import unicodedata
 import zlib
 
-SCRIPT_VERSION = '0.5.4'
+SCRIPT_VERSION = '0.5.5'
 CONTRACT = json.loads((Path(__file__).resolve().parents[1] / 'references/contract-v2.json').read_text(encoding='utf-8'))
 
 ERROR_MESSAGES = {
@@ -30,6 +30,8 @@ ERROR_MESSAGES = {
     'INVALID_CLASS': 'student_class 必须是字符串。',
     'INVALID_STUDENT_ID': 'student_id 必须是字符串。',
     'INVALID_TITLE': 'title 必须是字符串。',
+    'INVALID_DIGITS': '数字练习只支持 0–9，可使用空格或换行分隔。',
+    'SINGLE_DIGIT_ONLY': '专项练习请输入一个数字。',
     'INVALID_GRID': 'grid_type 仅支持 mi、tian 或 square。',
     'UNSUPPORTED_COLUMNS': '当前字帖方案不支持调整每行格数。',
     'INVALID_COLUMNS': 'columns 必须是 4 到 16 的整数。',
@@ -134,6 +136,9 @@ def is_han(char):
 def content_warnings(text, kind):
     """The website turns every non-space character into practice cells, so flag what will not be Han."""
     chars = [char for char in text if not char.isspace()]
+    if kind == 'numbers':
+        if not all(char in '0123456789' for char in unicodedata.normalize('NFKC', ''.join(chars))): fail('INVALID_DIGITS')
+        return []
     if not any(is_han(char) for char in chars): fail('NO_CJK_CONTENT')
     others = [char for char in chars if not is_han(char)]
     punctuation = [char for char in others if unicodedata.category(char)[0] in 'PS']
@@ -161,8 +166,8 @@ def describe_template(template_id):
         example['student_name'] = '林小禾'
     elif kind != 'foundations':
         required.append('text')
-        fields['text'] = {'type': 'string', 'non_empty': True, 'requires_han': True}
-        example['text'] = '春夏秋冬'
+        fields['text'] = {'type': 'string', 'non_empty': True, 'requires_han': kind != 'numbers'}
+        example['text'] = preset['document']['content']['text'] if kind == 'numbers' else '春夏秋冬'
     for field, (control, values, _) in TUNING.items():
         if control in preset['capabilities']['controls']:
             fields[field] = {'allowed_values': ['portrait'] if field == 'orientation' and kind == 'name' else values}
@@ -210,7 +215,9 @@ def validate(request):
         text = request.get('text')
         if not isinstance(text, str) or not text.strip(): errors.append(SkillInputError('MISSING_CONTENT'))
         else:
-            try: warnings = content_warnings(text, kind)
+            try:
+                warnings = content_warnings(text, kind)
+                if kind == 'numbers' and preset['id'] == 'numbers-single' and len(''.join(text.split())) != 1: fail('SINGLE_DIGIT_ONLY')
             except SkillInputError as error: errors.append(error)
     check(isinstance(request.get('title', ''), str), 'INVALID_TITLE')
     check(request.get('source', 'skill') in CONTRACT['sources'], 'INVALID_SOURCE', 'source', CONTRACT['sources'])
@@ -229,10 +236,13 @@ def create_link(request):
         content['studentClass'] = request.get('student_class', '')
         content['studentId'] = request.get('student_id', '')
     elif kind != 'foundations':
-        content['text'] = request['text']
+        content['text'] = unicodedata.normalize('NFKC', request['text']) if kind == 'numbers' else request['text']
     if 'title' in request: content['title'] = request['title']
     if 'grid_type' in request: document['grid']['type'] = request['grid_type']
     if 'columns' in request: layout['columns'] = request['columns']
+    if kind == 'numbers' and preset['id'] != 'numbers-copy':
+        count = max(1, (layout['columns'] - 1) // 3)
+        exercise['stages'] = [{'role':'master','count':1},{'role':'trace','count':count},{'role':'dotted','count':count},{'role':'copy','count':'fill'}]
     if 'orientation' in request: layout['orientation'] = request['orientation']
     if 'pinyin' in request: document['annotations']['pinyin'] = 'tone' if request['pinyin'] else 'off'
     if 'trace_style' in request: exercise['traceStyle'] = request['trace_style']

@@ -53,6 +53,266 @@
   ],
   "presets": [
     {
+      "id": "numbers-progressive",
+      "name": "0–9 综合练习",
+      "description": "范字、浅色描红、点阵与独立书写，逐步练习 0–9",
+      "kind": "numbers",
+      "capabilities": {
+        "controls": [
+          "orientation",
+          "gridType",
+          "gridColor",
+          "header",
+          "footer",
+          "columns",
+          "traceDensity"
+        ]
+      },
+      "document": {
+        "version": 1,
+        "content": {
+          "kind": "numbers",
+          "text": "0123456789",
+          "title": "",
+          "studentName": "",
+          "studentClass": "",
+          "studentId": "",
+          "foundationPattern": "strokes"
+        },
+        "exercise": {
+          "kind": "trace-copy",
+          "stages": [
+            {
+              "role": "master",
+              "count": 1
+            },
+            {
+              "role": "trace",
+              "count": 3
+            },
+            {
+              "role": "dotted",
+              "count": 3
+            },
+            {
+              "role": "copy",
+              "count": "fill"
+            }
+          ],
+          "traceStyle": "solid",
+          "traceDensity": "normal"
+        },
+        "annotations": {
+          "pinyin": "off",
+          "strokeCount": false,
+          "radical": false,
+          "structure": false
+        },
+        "layout": {
+          "paper": "A4",
+          "orientation": "portrait",
+          "flow": "row-per-character",
+          "columnDirection": "ltr",
+          "columns": 10,
+          "overflow": "paginate",
+          "poetryLayout": "full"
+        },
+        "grid": {
+          "type": "tian",
+          "color": "#74a88a"
+        },
+        "style": {
+          "fontId": "device-kaiti",
+          "masterColor": "#111111",
+          "traceColor": "#b8b8b8"
+        },
+        "header": {
+          "enabled": true,
+          "fields": [
+            "class",
+            "name"
+          ],
+          "showStars": false
+        },
+        "footer": {
+          "reprint": false,
+          "tip": ""
+        }
+      }
+    },
+    {
+      "id": "numbers-single",
+      "name": "单个数字专项",
+      "description": "选一个数字，整页反复练习",
+      "kind": "numbers",
+      "capabilities": {
+        "controls": [
+          "orientation",
+          "gridType",
+          "gridColor",
+          "header",
+          "footer",
+          "columns",
+          "traceDensity"
+        ]
+      },
+      "document": {
+        "version": 1,
+        "content": {
+          "kind": "numbers",
+          "text": "8",
+          "title": "",
+          "studentName": "",
+          "studentClass": "",
+          "studentId": "",
+          "foundationPattern": "strokes"
+        },
+        "exercise": {
+          "kind": "number-writing",
+          "stages": [
+            {
+              "role": "master",
+              "count": 1
+            },
+            {
+              "role": "trace",
+              "count": 3
+            },
+            {
+              "role": "dotted",
+              "count": 3
+            },
+            {
+              "role": "copy",
+              "count": "fill"
+            }
+          ],
+          "traceStyle": "solid",
+          "traceDensity": "normal"
+        },
+        "annotations": {
+          "pinyin": "off",
+          "strokeCount": false,
+          "radical": false,
+          "structure": false
+        },
+        "layout": {
+          "paper": "A4",
+          "orientation": "portrait",
+          "flow": "row-per-character",
+          "columnDirection": "ltr",
+          "columns": 10,
+          "overflow": "paginate",
+          "poetryLayout": "full"
+        },
+        "grid": {
+          "type": "tian",
+          "color": "#74a88a"
+        },
+        "style": {
+          "fontId": "device-kaiti",
+          "masterColor": "#111111",
+          "traceColor": "#b8b8b8"
+        },
+        "header": {
+          "enabled": true,
+          "fields": [
+            "class",
+            "name"
+          ],
+          "showStars": false
+        },
+        "footer": {
+          "reprint": false,
+          "tip": ""
+        }
+      }
+    },
+    {
+      "id": "numbers-copy",
+      "name": "数字描红与自写",
+      "description": "少量描红，更多留白独立书写",
+      "kind": "numbers",
+      "capabilities": {
+        "controls": [
+          "orientation",
+          "gridType",
+          "gridColor",
+          "header",
+          "footer",
+          "columns",
+          "traceDensity"
+        ]
+      },
+      "document": {
+        "version": 1,
+        "content": {
+          "kind": "numbers",
+          "text": "0123456789",
+          "title": "",
+          "studentName": "",
+          "studentClass": "",
+          "studentId": "",
+          "foundationPattern": "strokes"
+        },
+        "exercise": {
+          "kind": "trace-copy",
+          "stages": [
+            {
+              "role": "master",
+              "count": 1
+            },
+            {
+              "role": "trace",
+              "count": 2
+            },
+            {
+              "role": "copy",
+              "count": "fill"
+            }
+          ],
+          "traceStyle": "solid",
+          "traceDensity": "normal"
+        },
+        "annotations": {
+          "pinyin": "off",
+          "strokeCount": false,
+          "radical": false,
+          "structure": false
+        },
+        "layout": {
+          "paper": "A4",
+          "orientation": "portrait",
+          "flow": "row-per-character",
+          "columnDirection": "ltr",
+          "columns": 10,
+          "overflow": "paginate",
+          "poetryLayout": "full"
+        },
+        "grid": {
+          "type": "tian",
+          "color": "#74a88a"
+        },
+        "style": {
+          "fontId": "device-kaiti",
+          "masterColor": "#111111",
+          "traceColor": "#b8b8b8"
+        },
+        "header": {
+          "enabled": true,
+          "fields": [
+            "class",
+            "name"
+          ],
+          "showStars": false
+        },
+        "footer": {
+          "reprint": false,
+          "tip": ""
+        }
+      }
+    },
+    {
       "id": "standard-copy",
       "name": "一范二描全自写",
       "description": "先看范字、再描红，最后独立书写",
