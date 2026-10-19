@@ -2236,6 +2236,134 @@
         "strokes": 1,
         "category": "基本笔画",
         "glyphId": "shuwangou"
+      },
+      {
+        "code": "P013",
+        "char": "横撇",
+        "label": "横撇",
+        "strokes": 1,
+        "category": "基本笔画",
+        "glyphId": "hengpie"
+      },
+      {
+        "code": "P014",
+        "char": "横折钩",
+        "label": "横折钩",
+        "strokes": 1,
+        "category": "基本笔画",
+        "glyphId": "hengzhegou"
+      },
+      {
+        "code": "P015",
+        "char": "竖提",
+        "label": "竖提",
+        "strokes": 1,
+        "category": "基本笔画",
+        "glyphId": "shuti"
+      },
+      {
+        "code": "P016",
+        "char": "横折提",
+        "label": "横折提",
+        "strokes": 1,
+        "category": "基本笔画",
+        "glyphId": "hengzheti"
+      },
+      {
+        "code": "P017",
+        "char": "竖弯",
+        "label": "竖弯",
+        "strokes": 1,
+        "category": "基本笔画",
+        "glyphId": "shuwan"
+      },
+      {
+        "code": "P018",
+        "char": "斜钩",
+        "label": "斜钩",
+        "strokes": 1,
+        "category": "基本笔画",
+        "glyphId": "xiegou"
+      },
+      {
+        "code": "P019",
+        "char": "卧钩",
+        "label": "卧钩",
+        "strokes": 1,
+        "category": "基本笔画",
+        "glyphId": "wogou"
+      },
+      {
+        "code": "P020",
+        "char": "撇点",
+        "label": "撇点",
+        "strokes": 1,
+        "category": "基本笔画",
+        "glyphId": "piedian"
+      },
+      {
+        "code": "P021",
+        "char": "撇折",
+        "label": "撇折",
+        "strokes": 1,
+        "category": "基本笔画",
+        "glyphId": "piezhe"
+      },
+      {
+        "code": "P022",
+        "char": "横斜钩",
+        "label": "横斜钩",
+        "strokes": 1,
+        "category": "基本笔画",
+        "glyphId": "hengxiegou"
+      },
+      {
+        "code": "P023",
+        "char": "横折弯",
+        "label": "横折弯",
+        "strokes": 1,
+        "category": "基本笔画",
+        "glyphId": "hengzhewan"
+      },
+      {
+        "code": "P024",
+        "char": "横折弯钩",
+        "label": "横折弯钩",
+        "strokes": 1,
+        "category": "基本笔画",
+        "glyphId": "hengzhewangou"
+      },
+      {
+        "code": "P025",
+        "char": "横撇弯钩",
+        "label": "横撇弯钩",
+        "strokes": 1,
+        "category": "基本笔画",
+        "glyphId": "hengpiewangou"
+      },
+      {
+        "code": "P026",
+        "char": "竖折折钩",
+        "label": "竖折折钩",
+        "strokes": 1,
+        "category": "基本笔画",
+        "glyphId": "shuzhezhegou"
+      },
+      {
+        "code": "P027",
+        "char": "横折折撇",
+        "label": "横折折撇",
+        "strokes": 1,
+        "category": "基本笔画",
+        "glyphId": "hengzhezhepie"
+      },
+      {
+        "code": "P028",
+        "char": "横折折折钩",
+        "label": "横折折折钩",
+        "strokes": 1,
+        "category": "基本笔画",
+        "glyphId": "hengzhezhezhegou"
       }
     ],
     "groups": [
@@ -2249,7 +2377,8 @@
           "P004",
           "P005",
           "P006"
-        ]
+        ],
+        "recommended": false
       },
       {
         "code": "G02",
@@ -2261,7 +2390,8 @@
           "P010",
           "P011",
           "P012"
-        ]
+        ],
+        "recommended": false
       },
       {
         "code": "G03",
@@ -2273,7 +2403,8 @@
           "B166-1",
           "B098-1",
           "B064-1"
-        ]
+        ],
+        "recommended": false
       },
       {
         "code": "G04",
@@ -2285,7 +2416,8 @@
           "B148-1",
           "B176-1",
           "B066-1"
-        ]
+        ],
+        "recommended": false
       },
       {
         "code": "G05",
@@ -2297,7 +2429,8 @@
           "B111-1",
           "B131-1",
           "B095-2"
-        ]
+        ],
+        "recommended": false
       },
       {
         "code": "G06",
@@ -2309,7 +2442,8 @@
           "B018",
           "B068-1",
           "B144-1"
-        ]
+        ],
+        "recommended": false
       },
       {
         "code": "G07",
@@ -2321,7 +2455,8 @@
           "B090",
           "B092",
           "B021"
-        ]
+        ],
+        "recommended": false
       },
       {
         "code": "G08",
@@ -2333,7 +2468,8 @@
           "B170",
           "B107",
           "B117"
-        ]
+        ],
+        "recommended": false
       },
       {
         "code": "G09",
@@ -2345,7 +2481,8 @@
           "B007",
           "B115",
           "B097"
-        ]
+        ],
+        "recommended": false
       },
       {
         "code": "G10",
@@ -2357,7 +2494,8 @@
           "B032",
           "B014",
           "B016"
-        ]
+        ],
+        "recommended": false
       },
       {
         "code": "G11",
@@ -2369,7 +2507,8 @@
           "B013",
           "B020",
           "B010"
-        ]
+        ],
+        "recommended": false
       },
       {
         "code": "G12",
@@ -2381,7 +2520,8 @@
           "B081",
           "B046",
           "B007"
-        ]
+        ],
+        "recommended": false
       },
       {
         "code": "G13",
@@ -2389,7 +2529,8 @@
         "codes": [
           "B175-1",
           "B159-1"
-        ]
+        ],
+        "recommended": false
       },
       {
         "code": "G14",
@@ -2401,7 +2542,8 @@
           "B041",
           "B045",
           "B056"
-        ]
+        ],
+        "recommended": false
       },
       {
         "code": "G15",
@@ -2413,7 +2555,8 @@
           "B064",
           "B066",
           "B067"
-        ]
+        ],
+        "recommended": false
       },
       {
         "code": "G16",
@@ -2425,7 +2568,8 @@
           "B077",
           "B079",
           "B080"
-        ]
+        ],
+        "recommended": false
       },
       {
         "code": "G17",
@@ -2437,7 +2581,8 @@
           "B100",
           "B102",
           "B105"
-        ]
+        ],
+        "recommended": false
       },
       {
         "code": "G18",
@@ -2449,7 +2594,8 @@
           "B122",
           "B124",
           "B131"
-        ]
+        ],
+        "recommended": false
       },
       {
         "code": "G19",
@@ -2461,7 +2607,8 @@
           "B144",
           "B148",
           "B166"
-        ]
+        ],
+        "recommended": false
       },
       {
         "code": "G20",
@@ -2473,7 +2620,8 @@
           "B176",
           "B177",
           "B179"
-        ]
+        ],
+        "recommended": false
       },
       {
         "code": "G21",
@@ -2485,7 +2633,8 @@
           "B066-1",
           "B077-1",
           "B079-1"
-        ]
+        ],
+        "recommended": false
       },
       {
         "code": "G22",
@@ -2497,7 +2646,8 @@
           "B132-1",
           "B142-1",
           "B148-1"
-        ]
+        ],
+        "recommended": false
       },
       {
         "code": "G23",
@@ -2509,7 +2659,8 @@
           "B176-1",
           "B185-1",
           "B056-1"
-        ]
+        ],
+        "recommended": false
       },
       {
         "code": "G24",
@@ -2521,7 +2672,8 @@
           "B075-2",
           "B088-1",
           "B105-1"
-        ]
+        ],
+        "recommended": false
       },
       {
         "code": "G25",
@@ -2533,7 +2685,8 @@
           "B144-1",
           "B068-1",
           "B037-1"
-        ]
+        ],
+        "recommended": false
       },
       {
         "code": "G26",
@@ -2545,7 +2698,8 @@
           "B065",
           "B074",
           "B090"
-        ]
+        ],
+        "recommended": false
       },
       {
         "code": "G27",
@@ -2557,14 +2711,16 @@
           "B174",
           "B022-1",
           "B074-1"
-        ]
+        ],
+        "recommended": false
       },
       {
         "code": "G28",
         "name": "右旁分类 3",
         "codes": [
           "B159-1"
-        ]
+        ],
+        "recommended": false
       },
       {
         "code": "G29",
@@ -2576,7 +2732,8 @@
           "B048",
           "B050",
           "B086"
-        ]
+        ],
+        "recommended": false
       },
       {
         "code": "G30",
@@ -2588,7 +2745,8 @@
           "B130",
           "B135",
           "B169"
-        ]
+        ],
+        "recommended": false
       },
       {
         "code": "G31",
@@ -2600,7 +2758,8 @@
           "B013-1",
           "B036-1",
           "B050-1"
-        ]
+        ],
+        "recommended": false
       },
       {
         "code": "G32",
@@ -2611,7 +2770,8 @@
           "B126-1",
           "B135-1",
           "B145-1"
-        ]
+        ],
+        "recommended": false
       },
       {
         "code": "G33",
@@ -2623,7 +2783,8 @@
           "B098",
           "B108",
           "B147"
-        ]
+        ],
+        "recommended": false
       },
       {
         "code": "G34",
@@ -2633,7 +2794,8 @@
           "B021-1",
           "B077-2",
           "B095-1"
-        ]
+        ],
+        "recommended": false
       },
       {
         "code": "G35",
@@ -2645,7 +2807,8 @@
           "B013",
           "B020",
           "B026"
-        ]
+        ],
+        "recommended": false
       },
       {
         "code": "G36",
@@ -2657,7 +2820,8 @@
           "B049",
           "B051",
           "B081"
-        ]
+        ],
+        "recommended": false
       },
       {
         "code": "G37",
@@ -2665,7 +2829,8 @@
         "codes": [
           "B097",
           "B115"
-        ]
+        ],
+        "recommended": false
       },
       {
         "code": "G38",
@@ -2677,7 +2842,8 @@
           "B004",
           "B005",
           "B006"
-        ]
+        ],
+        "recommended": false
       },
       {
         "code": "G39",
@@ -2689,7 +2855,8 @@
           "B018",
           "B024",
           "B025"
-        ]
+        ],
+        "recommended": false
       },
       {
         "code": "G40",
@@ -2701,7 +2868,8 @@
           "B033",
           "B034",
           "B035"
-        ]
+        ],
+        "recommended": false
       },
       {
         "code": "G41",
@@ -2713,7 +2881,8 @@
           "B042",
           "B043",
           "B044"
-        ]
+        ],
+        "recommended": false
       },
       {
         "code": "G42",
@@ -2725,7 +2894,8 @@
           "B055",
           "B057",
           "B059"
-        ]
+        ],
+        "recommended": false
       },
       {
         "code": "G43",
@@ -2737,7 +2907,8 @@
           "B070",
           "B071",
           "B072"
-        ]
+        ],
+        "recommended": false
       },
       {
         "code": "G44",
@@ -2749,7 +2920,8 @@
           "B083",
           "B087",
           "B089"
-        ]
+        ],
+        "recommended": false
       },
       {
         "code": "G45",
@@ -2761,7 +2933,8 @@
           "B095",
           "B096",
           "B099"
-        ]
+        ],
+        "recommended": false
       },
       {
         "code": "G46",
@@ -2773,7 +2946,8 @@
           "B106",
           "B109",
           "B112"
-        ]
+        ],
+        "recommended": false
       },
       {
         "code": "G47",
@@ -2785,7 +2959,8 @@
           "B119",
           "B120",
           "B121"
-        ]
+        ],
+        "recommended": false
       },
       {
         "code": "G48",
@@ -2797,7 +2972,8 @@
           "B129",
           "B132",
           "B134"
-        ]
+        ],
+        "recommended": false
       },
       {
         "code": "G49",
@@ -2809,7 +2985,8 @@
           "B140",
           "B141",
           "B143"
-        ]
+        ],
+        "recommended": false
       },
       {
         "code": "G50",
@@ -2821,7 +2998,8 @@
           "B150",
           "B151",
           "B152"
-        ]
+        ],
+        "recommended": false
       },
       {
         "code": "G51",
@@ -2833,7 +3011,8 @@
           "B156",
           "B157",
           "B160"
-        ]
+        ],
+        "recommended": false
       },
       {
         "code": "G52",
@@ -2845,7 +3024,8 @@
           "B164",
           "B165",
           "B168"
-        ]
+        ],
+        "recommended": false
       },
       {
         "code": "G53",
@@ -2857,7 +3037,8 @@
           "B180",
           "B181",
           "B183"
-        ]
+        ],
+        "recommended": false
       },
       {
         "code": "G54",
@@ -2869,7 +3050,8 @@
           "B189",
           "B190",
           "B191"
-        ]
+        ],
+        "recommended": false
       },
       {
         "code": "G55",
@@ -2881,7 +3063,8 @@
           "B195",
           "B196",
           "B197"
-        ]
+        ],
+        "recommended": false
       },
       {
         "code": "G56",
@@ -2893,7 +3076,8 @@
           "B201",
           "B002-1",
           "B005-1"
-        ]
+        ],
+        "recommended": false
       },
       {
         "code": "G57",
@@ -2905,7 +3089,8 @@
           "B052-1",
           "B052-2",
           "B062-1"
-        ]
+        ],
+        "recommended": false
       },
       {
         "code": "G58",
@@ -2913,7 +3098,8 @@
         "codes": [
           "B075-1",
           "B099-1"
-        ]
+        ],
+        "recommended": false
       },
       {
         "code": "G59",
@@ -2948,7 +3134,8 @@
           "B128",
           "B090"
         ],
-        "recommended": true
+        "recommended": true,
+        "kind": "common"
       },
       {
         "code": "G60",
@@ -2983,7 +3170,7 @@
           "B114",
           "B122"
         ],
-        "recommended": true
+        "recommended": false
       },
       {
         "code": "G61",
@@ -3018,7 +3205,7 @@
           "B158-1",
           "B166-1"
         ],
-        "recommended": true
+        "recommended": false
       },
       {
         "code": "G62",
@@ -3041,7 +3228,7 @@
           "B068-1",
           "B037-1"
         ],
-        "recommended": true
+        "recommended": false
       },
       {
         "code": "G63",
@@ -3061,7 +3248,7 @@
           "B074-1",
           "B159-1"
         ],
-        "recommended": true
+        "recommended": false
       },
       {
         "code": "G64",
@@ -3091,7 +3278,7 @@
           "B135-1",
           "B145-1"
         ],
-        "recommended": true
+        "recommended": false
       },
       {
         "code": "G65",
@@ -3108,7 +3295,7 @@
           "B077-2",
           "B095-1"
         ],
-        "recommended": true
+        "recommended": false
       },
       {
         "code": "G66",
@@ -3129,7 +3316,7 @@
           "B097",
           "B115"
         ],
-        "recommended": true
+        "recommended": false
       },
       {
         "code": "G67",
@@ -3164,7 +3351,7 @@
           "B054",
           "B055"
         ],
-        "recommended": true
+        "recommended": false
       },
       {
         "code": "G68",
@@ -3199,7 +3386,7 @@
           "B113",
           "B116"
         ],
-        "recommended": true
+        "recommended": false
       },
       {
         "code": "G69",
@@ -3234,7 +3421,7 @@
           "B157",
           "B160"
         ],
-        "recommended": true
+        "recommended": false
       },
       {
         "code": "G70",
@@ -3269,7 +3456,7 @@
           "B200",
           "B201"
         ],
-        "recommended": true
+        "recommended": false
       },
       {
         "code": "G71",
@@ -3286,7 +3473,431 @@
           "B075-1",
           "B099-1"
         ],
+        "recommended": false
+      },
+      {
+        "code": "G72",
+        "name": "常用笔画",
+        "codes": [
+          "P001",
+          "P002",
+          "P003",
+          "P004",
+          "P005",
+          "P006",
+          "P007",
+          "P008",
+          "P009",
+          "P010",
+          "P011",
+          "P012",
+          "P013",
+          "P014",
+          "P015",
+          "P016",
+          "P017",
+          "P018",
+          "P019",
+          "P020",
+          "P021",
+          "P022",
+          "P023",
+          "P024",
+          "P025",
+          "P026",
+          "P027",
+          "P028"
+        ],
+        "kind": "strokes",
         "recommended": true
+      },
+      {
+        "code": "G73",
+        "name": "部首练习 01 · 1—2画",
+        "codes": [
+          "B001",
+          "B002",
+          "B002-1",
+          "B003",
+          "B004",
+          "B005",
+          "B005-1",
+          "B005-2",
+          "B006",
+          "B007",
+          "B008",
+          "B009",
+          "B010",
+          "B011",
+          "B011-1",
+          "B012",
+          "B012-1",
+          "B013",
+          "B013-1",
+          "B014",
+          "B015",
+          "B016",
+          "B017",
+          "B018",
+          "B019",
+          "B020",
+          "B021",
+          "B021-1"
+        ],
+        "kind": "radicals",
+        "recommended": true
+      },
+      {
+        "code": "G74",
+        "name": "部首练习 02 · 2—3画",
+        "codes": [
+          "B022",
+          "B022-1",
+          "B023",
+          "B024",
+          "B025",
+          "B026",
+          "B159-1",
+          "B166-1",
+          "B175-1",
+          "B027",
+          "B028",
+          "B029",
+          "B029-1",
+          "B029-2",
+          "B030",
+          "B031",
+          "B032",
+          "B033",
+          "B034",
+          "B034-1",
+          "B035",
+          "B036",
+          "B036-1",
+          "B037",
+          "B037-1",
+          "B038",
+          "B039",
+          "B040"
+        ],
+        "kind": "radicals",
+        "recommended": true
+      },
+      {
+        "code": "G75",
+        "name": "部首练习 03 · 3画",
+        "codes": [
+          "B041",
+          "B042",
+          "B043",
+          "B044",
+          "B045",
+          "B046",
+          "B047",
+          "B048",
+          "B049",
+          "B050",
+          "B050-1",
+          "B051",
+          "B052",
+          "B052-1",
+          "B052-2",
+          "B053",
+          "B054",
+          "B055",
+          "B056",
+          "B056-1",
+          "B057",
+          "B058",
+          "B059",
+          "B060",
+          "B066-1",
+          "B077-1",
+          "B080-1",
+          "B098-1"
+        ],
+        "kind": "radicals",
+        "recommended": true
+      },
+      {
+        "code": "G76",
+        "name": "部首练习 04 · 3—4画",
+        "codes": [
+          "B148-1",
+          "B185-1",
+          "B061",
+          "B061-1",
+          "B062",
+          "B062-1",
+          "B063",
+          "B064",
+          "B064-1",
+          "B065",
+          "B066",
+          "B067",
+          "B068",
+          "B068-1",
+          "B069",
+          "B070",
+          "B071",
+          "B072",
+          "B073",
+          "B074",
+          "B074-1",
+          "B075",
+          "B075-1",
+          "B075-2",
+          "B076",
+          "B077",
+          "B078",
+          "B079"
+        ],
+        "kind": "radicals",
+        "recommended": true
+      },
+      {
+        "code": "G77",
+        "name": "部首练习 05 · 4画",
+        "codes": [
+          "B079-1",
+          "B080",
+          "B081",
+          "B082",
+          "B083",
+          "B084",
+          "B085",
+          "B086",
+          "B086-1",
+          "B087",
+          "B088",
+          "B088-1",
+          "B089",
+          "B090",
+          "B091",
+          "B092",
+          "B093",
+          "B094",
+          "B095",
+          "B095-1",
+          "B095-2",
+          "B096",
+          "B097",
+          "B098",
+          "B099",
+          "B100-1",
+          "B123-1",
+          "B132-1"
+        ],
+        "kind": "radicals",
+        "recommended": true
+      },
+      {
+        "code": "G78",
+        "name": "部首练习 06 · 4—5画",
+        "codes": [
+          "B145-1",
+          "B077-2",
+          "B099-1",
+          "B100",
+          "B101",
+          "B102",
+          "B103",
+          "B104",
+          "B105",
+          "B105-1",
+          "B106",
+          "B107",
+          "B108",
+          "B109",
+          "B110",
+          "B111",
+          "B111-1",
+          "B112",
+          "B113",
+          "B114",
+          "B115",
+          "B116",
+          "B117",
+          "B118",
+          "B119",
+          "B120",
+          "B121",
+          "B142-1"
+        ],
+        "kind": "radicals",
+        "recommended": true
+      },
+      {
+        "code": "G79",
+        "name": "部首练习 07 · 5—6画",
+        "codes": [
+          "B176-1",
+          "B122",
+          "B123",
+          "B124",
+          "B125",
+          "B126",
+          "B126-1",
+          "B127",
+          "B128",
+          "B129",
+          "B130",
+          "B131",
+          "B131-1",
+          "B132",
+          "B133",
+          "B134",
+          "B135",
+          "B135-1",
+          "B136",
+          "B137",
+          "B138",
+          "B139",
+          "B140",
+          "B141",
+          "B142",
+          "B143",
+          "B144",
+          "B144-1"
+        ],
+        "kind": "radicals",
+        "recommended": true
+      },
+      {
+        "code": "G80",
+        "name": "部首练习 08 · 6—8画",
+        "codes": [
+          "B145",
+          "B146",
+          "B147",
+          "B148",
+          "B149",
+          "B150",
+          "B151",
+          "B152",
+          "B153",
+          "B154",
+          "B155",
+          "B156",
+          "B157",
+          "B158",
+          "B158-1",
+          "B159",
+          "B160",
+          "B161",
+          "B162",
+          "B163",
+          "B164",
+          "B165",
+          "B166",
+          "B167",
+          "B168",
+          "B169",
+          "B170",
+          "B171"
+        ],
+        "kind": "radicals",
+        "recommended": true
+      },
+      {
+        "code": "G81",
+        "name": "部首练习 09 · 8—13画",
+        "codes": [
+          "B172",
+          "B173",
+          "B174",
+          "B175",
+          "B176",
+          "B177",
+          "B178",
+          "B179",
+          "B180",
+          "B181",
+          "B182",
+          "B183",
+          "B184",
+          "B185",
+          "B186",
+          "B187",
+          "B188",
+          "B189",
+          "B190",
+          "B191",
+          "B192",
+          "B193",
+          "B194",
+          "B195",
+          "B196",
+          "B197",
+          "B198",
+          "B199"
+        ],
+        "kind": "radicals",
+        "recommended": true
+      },
+      {
+        "code": "G82",
+        "name": "部首练习 10 · 14—17画与复习",
+        "codes": [
+          "B200",
+          "B201",
+          "B172",
+          "B173",
+          "B174",
+          "B175",
+          "B176",
+          "B177",
+          "B178",
+          "B179",
+          "B180",
+          "B181",
+          "B182",
+          "B183",
+          "B184",
+          "B185",
+          "B186",
+          "B187",
+          "B188",
+          "B189",
+          "B190",
+          "B191",
+          "B192",
+          "B193",
+          "B194",
+          "B195",
+          "B196",
+          "B197"
+        ],
+        "kind": "radicals",
+        "recommended": true,
+        "reviewCodes": [
+          "B172",
+          "B173",
+          "B174",
+          "B175",
+          "B176",
+          "B177",
+          "B178",
+          "B179",
+          "B180",
+          "B181",
+          "B182",
+          "B183",
+          "B184",
+          "B185",
+          "B186",
+          "B187",
+          "B188",
+          "B189",
+          "B190",
+          "B191",
+          "B192",
+          "B193",
+          "B194",
+          "B195",
+          "B196",
+          "B197"
+        ]
       }
     ]
   },
