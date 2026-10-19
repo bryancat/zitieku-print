@@ -11,10 +11,11 @@ from urllib.parse import urlencode
 import unicodedata
 import zlib
 
-SCRIPT_VERSION = '0.5.6'
+SCRIPT_VERSION = '0.5.7'
 CONTRACT = json.loads((Path(__file__).resolve().parents[1] / 'references/contract-v2.json').read_text(encoding='utf-8'))
 
 ERROR_MESSAGES = {
+    'INVALID_RADICAL_GROUPS': '部首分组无效，请使用随包目录中的组号、部首编号或偏旁字符；左右耳旁用编号区分，每次最多 60 组。',
     'INVALID_INPUT': '输入必须是一个 JSON 对象。',
     'INVALID_JSON': '输入不是有效的 JSON。',
     'INPUT_READ_FAILED': '无法读取输入文件。',
@@ -150,6 +151,35 @@ def content_warnings(text, kind):
         warnings.append(f'text 含有 {len(punctuation)} 个标点，逐字练习时每个标点会单独占一行；如非有意请删除。')
     return warnings
 
+def valid_radical_groups(text):
+    if not isinstance(text, str): return False
+    if not text.strip(): return True
+    catalog = CONTRACT['radicalCatalog']
+    entries = catalog['entries']; all_entries = entries + catalog['strokes']
+    by_code = {e['code']: e for e in all_entries}
+    groups = {g['code'] for g in catalog['groups']}
+    total = 0
+    for line in text.strip().splitlines():
+        custom = False
+        for token in re.findall(r'[GBP][0-9]+(?:-[0-9]+)?|[0-9]+(?:-[0-9]+)?|[^\s,，、;；]+', line.upper()):
+            if re.fullmatch(r'G[0-9]+', token):
+                if custom: total += 1; custom = False
+                if 'G'+token[1:].zfill(2) not in groups: return False
+                total += 1
+            elif re.fullmatch(r'(?:[BP])?[0-9]+(?:-[0-9]+)?', token):
+                match = re.fullmatch(r'([BP])?([0-9]+)(-[0-9]+)?', token)
+                code = (match[1] or 'B')+match[2].zfill(3)+(match[3] or '')
+                if code not in by_code: return False
+                custom = True
+            elif any(e['label'] == token for e in all_entries): custom = True
+            else:
+                for char in token:
+                    matches = [e for e in entries if e['char'] == char]
+                    if not matches or (len(matches)>1 and not any('parent' not in e for e in matches)): return False
+                custom = True
+        if custom: total += 1
+    return 0 < total <= 60
+
 def describe_template(template_id):
     preset = find_preset(template_id)
     if preset is None:
@@ -164,6 +194,9 @@ def describe_template(template_id):
         fields.update({name: {'type': 'string'} for name in ['student_name', 'student_class', 'student_id']})
         fields['student_name']['max_characters'] = CONTRACT['limits']['nameCharacters']
         example['student_name'] = '林小禾'
+    elif template_id == 'dot-components':
+        fields['text'] = {'type':'string', 'grouped':True, 'catalog':'references/contract-v2.json#radicalCatalog'}
+        example['text'] = 'G59\nG60'
     elif kind != 'foundations' and preset['id'] != 'numbers-copy':
         required.append('text')
         fields['text'] = {'type': 'string', 'non_empty': True, 'requires_han': kind != 'numbers'}
@@ -211,6 +244,8 @@ def validate(request):
         else: check(len(name.strip()) <= CONTRACT['limits']['nameCharacters'], 'NAME_TOO_LONG')
         check(isinstance(request.get('student_class', ''), str), 'INVALID_CLASS')
         check(isinstance(request.get('student_id', ''), str), 'INVALID_STUDENT_ID')
+    elif preset['id'] == 'dot-components':
+        check(valid_radical_groups(request.get('text', '')), 'INVALID_RADICAL_GROUPS', 'text')
     elif kind != 'foundations' and preset['id'] != 'numbers-copy':
         text = request.get('text')
         if not isinstance(text, str) or not text.strip(): errors.append(SkillInputError('MISSING_CONTENT'))
@@ -235,6 +270,8 @@ def create_link(request):
         content['studentName'] = request['student_name'].strip()
         content['studentClass'] = request.get('student_class', '')
         content['studentId'] = request.get('student_id', '')
+    elif preset['id'] == 'dot-components':
+        content['text'] = request.get('text', content['text'])
     elif kind != 'foundations' and preset['id'] != 'numbers-copy':
         content['text'] = unicodedata.normalize('NFKC', request['text']) if kind == 'numbers' else request['text']
     if 'title' in request: content['title'] = request['title']

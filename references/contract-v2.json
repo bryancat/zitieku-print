@@ -51,6 +51,3245 @@
     "source",
     "host"
   ],
+  "radicalCatalog": {
+    "source": "https://www.moe.gov.cn/ewebeditor/uploadfile/2015/01/13/20150113090108815.pdf",
+    "entries": [
+      {
+        "code": "B001",
+        "char": "一",
+        "label": "一字部",
+        "strokes": 1,
+        "category": "独体与其他",
+        "glyphId": "radical-001"
+      },
+      {
+        "code": "B002",
+        "char": "丨",
+        "label": "竖",
+        "strokes": 1,
+        "category": "独体与其他",
+        "glyphId": "radical-002"
+      },
+      {
+        "code": "B003",
+        "char": "丿",
+        "label": "撇",
+        "strokes": 1,
+        "category": "独体与其他",
+        "glyphId": "radical-003"
+      },
+      {
+        "code": "B004",
+        "char": "丶",
+        "label": "点",
+        "strokes": 1,
+        "category": "独体与其他",
+        "glyphId": "radical-004"
+      },
+      {
+        "code": "B005",
+        "char": "乛",
+        "label": "横钩形",
+        "strokes": 1,
+        "category": "独体与其他",
+        "glyphId": "radical-005"
+      },
+      {
+        "code": "B006",
+        "char": "十",
+        "label": "十字部",
+        "strokes": 2,
+        "category": "独体与其他",
+        "glyphId": "radical-006"
+      },
+      {
+        "code": "B007",
+        "char": "厂",
+        "label": "厂字部",
+        "strokes": 2,
+        "category": "包围",
+        "glyphId": "radical-007"
+      },
+      {
+        "code": "B008",
+        "char": "匚",
+        "label": "三框",
+        "strokes": 2,
+        "category": "包围",
+        "glyphId": "radical-008"
+      },
+      {
+        "code": "B009",
+        "char": "卜",
+        "label": "卜字部",
+        "strokes": 2,
+        "category": "独体与其他",
+        "glyphId": "radical-009"
+      },
+      {
+        "code": "B010",
+        "char": "冂",
+        "label": "同字框",
+        "strokes": 2,
+        "category": "包围",
+        "glyphId": "radical-010"
+      },
+      {
+        "code": "B011",
+        "char": "八",
+        "label": "八字部",
+        "strokes": 2,
+        "category": "独体与其他",
+        "glyphId": "radical-011"
+      },
+      {
+        "code": "B012",
+        "char": "人",
+        "label": "人字部",
+        "strokes": 2,
+        "category": "左旁",
+        "glyphId": "radical-012"
+      },
+      {
+        "code": "B013",
+        "char": "勹",
+        "label": "包字头",
+        "strokes": 2,
+        "category": "包围",
+        "glyphId": "radical-013"
+      },
+      {
+        "code": "B014",
+        "char": "儿",
+        "label": "儿字部",
+        "strokes": 2,
+        "category": "字底",
+        "glyphId": "radical-014"
+      },
+      {
+        "code": "B015",
+        "char": "匕",
+        "label": "匕字部",
+        "strokes": 2,
+        "category": "独体与其他",
+        "glyphId": "radical-015"
+      },
+      {
+        "code": "B016",
+        "char": "几",
+        "label": "几字部",
+        "strokes": 2,
+        "category": "字底",
+        "glyphId": "radical-016"
+      },
+      {
+        "code": "B017",
+        "char": "亠",
+        "label": "点横头",
+        "strokes": 2,
+        "category": "字头",
+        "glyphId": "radical-017"
+      },
+      {
+        "code": "B018",
+        "char": "冫",
+        "label": "两点水",
+        "strokes": 2,
+        "category": "独体与其他",
+        "glyphId": "radical-018"
+      },
+      {
+        "code": "B019",
+        "char": "冖",
+        "label": "秃宝盖",
+        "strokes": 2,
+        "category": "字头",
+        "glyphId": "radical-019"
+      },
+      {
+        "code": "B020",
+        "char": "凵",
+        "label": "凵字框",
+        "strokes": 2,
+        "category": "包围",
+        "glyphId": "radical-020"
+      },
+      {
+        "code": "B021",
+        "char": "卩",
+        "label": "单耳旁",
+        "strokes": 2,
+        "category": "右旁",
+        "glyphId": "radical-021"
+      },
+      {
+        "code": "B022",
+        "char": "刀",
+        "label": "刀字部",
+        "strokes": 2,
+        "category": "右旁",
+        "glyphId": "radical-022"
+      },
+      {
+        "code": "B023",
+        "char": "力",
+        "label": "力字部",
+        "strokes": 2,
+        "category": "右旁",
+        "glyphId": "radical-023"
+      },
+      {
+        "code": "B024",
+        "char": "又",
+        "label": "又字部",
+        "strokes": 2,
+        "category": "独体与其他",
+        "glyphId": "radical-024"
+      },
+      {
+        "code": "B025",
+        "char": "厶",
+        "label": "厶字部",
+        "strokes": 2,
+        "category": "独体与其他",
+        "glyphId": "radical-025"
+      },
+      {
+        "code": "B026",
+        "char": "廴",
+        "label": "建之旁",
+        "strokes": 2,
+        "category": "包围",
+        "glyphId": "radical-026"
+      },
+      {
+        "code": "B027",
+        "char": "干",
+        "label": "干字部",
+        "strokes": 3,
+        "category": "独体与其他",
+        "glyphId": "radical-027"
+      },
+      {
+        "code": "B028",
+        "char": "工",
+        "label": "工字部",
+        "strokes": 3,
+        "category": "独体与其他",
+        "glyphId": "radical-028"
+      },
+      {
+        "code": "B029",
+        "char": "土",
+        "label": "土字部",
+        "strokes": 3,
+        "category": "左旁",
+        "glyphId": "radical-029"
+      },
+      {
+        "code": "B030",
+        "char": "艹",
+        "label": "草字头",
+        "strokes": 3,
+        "category": "字头",
+        "glyphId": "radical-030"
+      },
+      {
+        "code": "B031",
+        "char": "寸",
+        "label": "寸字部",
+        "strokes": 3,
+        "category": "独体与其他",
+        "glyphId": "radical-031"
+      },
+      {
+        "code": "B032",
+        "char": "廾",
+        "label": "弄字底",
+        "strokes": 3,
+        "category": "字底",
+        "glyphId": "radical-032"
+      },
+      {
+        "code": "B033",
+        "char": "大",
+        "label": "大字部",
+        "strokes": 3,
+        "category": "独体与其他",
+        "glyphId": "radical-033"
+      },
+      {
+        "code": "B034",
+        "char": "尢",
+        "label": "尢字旁",
+        "strokes": 3,
+        "category": "独体与其他",
+        "glyphId": "radical-034"
+      },
+      {
+        "code": "B035",
+        "char": "弋",
+        "label": "弋字部",
+        "strokes": 3,
+        "category": "独体与其他",
+        "glyphId": "radical-035"
+      },
+      {
+        "code": "B036",
+        "char": "小",
+        "label": "小字部",
+        "strokes": 3,
+        "category": "独体与其他",
+        "glyphId": "radical-036"
+      },
+      {
+        "code": "B037",
+        "char": "口",
+        "label": "口字部",
+        "strokes": 3,
+        "category": "独体与其他",
+        "glyphId": "radical-037"
+      },
+      {
+        "code": "B038",
+        "char": "囗",
+        "label": "囗字部",
+        "strokes": 3,
+        "category": "包围",
+        "glyphId": "radical-038"
+      },
+      {
+        "code": "B039",
+        "char": "山",
+        "label": "山字部",
+        "strokes": 3,
+        "category": "独体与其他",
+        "glyphId": "radical-039"
+      },
+      {
+        "code": "B040",
+        "char": "巾",
+        "label": "巾字旁",
+        "strokes": 3,
+        "category": "左旁",
+        "glyphId": "radical-040"
+      },
+      {
+        "code": "B041",
+        "char": "彳",
+        "label": "双人旁",
+        "strokes": 3,
+        "category": "左旁",
+        "glyphId": "radical-041"
+      },
+      {
+        "code": "B042",
+        "char": "彡",
+        "label": "三撇",
+        "strokes": 3,
+        "category": "独体与其他",
+        "glyphId": "radical-042"
+      },
+      {
+        "code": "B043",
+        "char": "夕",
+        "label": "夕字部",
+        "strokes": 3,
+        "category": "独体与其他",
+        "glyphId": "radical-043"
+      },
+      {
+        "code": "B044",
+        "char": "夂",
+        "label": "折文",
+        "strokes": 3,
+        "category": "独体与其他",
+        "glyphId": "radical-044"
+      },
+      {
+        "code": "B045",
+        "char": "丬",
+        "label": "将字旁",
+        "strokes": 3,
+        "category": "左旁",
+        "glyphId": "radical-045"
+      },
+      {
+        "code": "B046",
+        "char": "广",
+        "label": "广字旁",
+        "strokes": 3,
+        "category": "包围",
+        "glyphId": "radical-046"
+      },
+      {
+        "code": "B047",
+        "char": "门",
+        "label": "门字部",
+        "strokes": 3,
+        "category": "包围",
+        "glyphId": "radical-047"
+      },
+      {
+        "code": "B048",
+        "char": "宀",
+        "label": "宝盖头",
+        "strokes": 3,
+        "category": "字头",
+        "glyphId": "radical-048"
+      },
+      {
+        "code": "B049",
+        "char": "辶",
+        "label": "走之底",
+        "strokes": 3,
+        "category": "包围",
+        "glyphId": "radical-049"
+      },
+      {
+        "code": "B050",
+        "char": "彐",
+        "label": "彐字头",
+        "strokes": 3,
+        "category": "字头",
+        "glyphId": "radical-050"
+      },
+      {
+        "code": "B051",
+        "char": "尸",
+        "label": "尸字部",
+        "strokes": 3,
+        "category": "包围",
+        "glyphId": "radical-051"
+      },
+      {
+        "code": "B052",
+        "char": "己",
+        "label": "己字部",
+        "strokes": 3,
+        "category": "独体与其他",
+        "glyphId": "radical-052"
+      },
+      {
+        "code": "B053",
+        "char": "弓",
+        "label": "弓字部",
+        "strokes": 3,
+        "category": "独体与其他",
+        "glyphId": "radical-053"
+      },
+      {
+        "code": "B054",
+        "char": "子",
+        "label": "子字部",
+        "strokes": 3,
+        "category": "独体与其他",
+        "glyphId": "radical-054"
+      },
+      {
+        "code": "B055",
+        "char": "屮",
+        "label": "屮字部",
+        "strokes": 3,
+        "category": "独体与其他",
+        "glyphId": "radical-055"
+      },
+      {
+        "code": "B056",
+        "char": "女",
+        "label": "女字部",
+        "strokes": 3,
+        "category": "左旁",
+        "glyphId": "radical-056"
+      },
+      {
+        "code": "B057",
+        "char": "飞",
+        "label": "飞字部",
+        "strokes": 3,
+        "category": "独体与其他",
+        "glyphId": "radical-057"
+      },
+      {
+        "code": "B058",
+        "char": "马",
+        "label": "马字部",
+        "strokes": 3,
+        "category": "左旁",
+        "glyphId": "radical-058"
+      },
+      {
+        "code": "B059",
+        "char": "幺",
+        "label": "幺字部",
+        "strokes": 3,
+        "category": "独体与其他",
+        "glyphId": "radical-059"
+      },
+      {
+        "code": "B060",
+        "char": "巛",
+        "label": "三拐",
+        "strokes": 3,
+        "category": "独体与其他",
+        "glyphId": "radical-060"
+      },
+      {
+        "code": "B061",
+        "char": "王",
+        "label": "王字部",
+        "strokes": 4,
+        "category": "左旁",
+        "glyphId": "radical-061"
+      },
+      {
+        "code": "B062",
+        "char": "无",
+        "label": "无字部",
+        "strokes": 4,
+        "category": "独体与其他",
+        "glyphId": "radical-062"
+      },
+      {
+        "code": "B063",
+        "char": "韦",
+        "label": "韦字部",
+        "strokes": 4,
+        "category": "左旁",
+        "glyphId": "radical-063"
+      },
+      {
+        "code": "B064",
+        "char": "木",
+        "label": "木字部",
+        "strokes": 4,
+        "category": "左旁",
+        "glyphId": "radical-064"
+      },
+      {
+        "code": "B065",
+        "char": "支",
+        "label": "支字部",
+        "strokes": 4,
+        "category": "右旁",
+        "glyphId": "radical-065"
+      },
+      {
+        "code": "B066",
+        "char": "犬",
+        "label": "犬字部",
+        "strokes": 4,
+        "category": "左旁",
+        "glyphId": "radical-066"
+      },
+      {
+        "code": "B067",
+        "char": "歹",
+        "label": "歹字部",
+        "strokes": 4,
+        "category": "左旁",
+        "glyphId": "radical-067"
+      },
+      {
+        "code": "B068",
+        "char": "车",
+        "label": "车字部",
+        "strokes": 4,
+        "category": "左旁",
+        "glyphId": "radical-068"
+      },
+      {
+        "code": "B069",
+        "char": "牙",
+        "label": "牙字部",
+        "strokes": 4,
+        "category": "独体与其他",
+        "glyphId": "radical-069"
+      },
+      {
+        "code": "B070",
+        "char": "戈",
+        "label": "戈字部",
+        "strokes": 4,
+        "category": "独体与其他",
+        "glyphId": "radical-070"
+      },
+      {
+        "code": "B071",
+        "char": "比",
+        "label": "比字部",
+        "strokes": 4,
+        "category": "独体与其他",
+        "glyphId": "radical-071"
+      },
+      {
+        "code": "B072",
+        "char": "瓦",
+        "label": "瓦字部",
+        "strokes": 4,
+        "category": "独体与其他",
+        "glyphId": "radical-072"
+      },
+      {
+        "code": "B073",
+        "char": "止",
+        "label": "止字部",
+        "strokes": 4,
+        "category": "独体与其他",
+        "glyphId": "radical-073"
+      },
+      {
+        "code": "B074",
+        "char": "攴",
+        "label": "攴字旁",
+        "strokes": 4,
+        "category": "右旁",
+        "glyphId": "radical-074"
+      },
+      {
+        "code": "B075",
+        "char": "日",
+        "label": "日字部",
+        "strokes": 4,
+        "category": "左旁",
+        "glyphId": "radical-075"
+      },
+      {
+        "code": "B076",
+        "char": "贝",
+        "label": "贝字部",
+        "strokes": 4,
+        "category": "左旁",
+        "glyphId": "radical-076"
+      },
+      {
+        "code": "B077",
+        "char": "水",
+        "label": "水字部",
+        "strokes": 4,
+        "category": "左旁",
+        "glyphId": "radical-077"
+      },
+      {
+        "code": "B078",
+        "char": "见",
+        "label": "见字部",
+        "strokes": 4,
+        "category": "独体与其他",
+        "glyphId": "radical-078"
+      },
+      {
+        "code": "B079",
+        "char": "牛",
+        "label": "牛字部",
+        "strokes": 4,
+        "category": "左旁",
+        "glyphId": "radical-079"
+      },
+      {
+        "code": "B080",
+        "char": "手",
+        "label": "手字部",
+        "strokes": 4,
+        "category": "左旁",
+        "glyphId": "radical-080"
+      },
+      {
+        "code": "B081",
+        "char": "气",
+        "label": "气字部",
+        "strokes": 4,
+        "category": "包围",
+        "glyphId": "radical-081"
+      },
+      {
+        "code": "B082",
+        "char": "毛",
+        "label": "毛字部",
+        "strokes": 4,
+        "category": "独体与其他",
+        "glyphId": "radical-082"
+      },
+      {
+        "code": "B083",
+        "char": "长",
+        "label": "长字部",
+        "strokes": 4,
+        "category": "独体与其他",
+        "glyphId": "radical-083"
+      },
+      {
+        "code": "B084",
+        "char": "片",
+        "label": "片字部",
+        "strokes": 4,
+        "category": "左旁",
+        "glyphId": "radical-084"
+      },
+      {
+        "code": "B085",
+        "char": "斤",
+        "label": "斤字部",
+        "strokes": 4,
+        "category": "左旁",
+        "glyphId": "radical-085"
+      },
+      {
+        "code": "B086",
+        "char": "爪",
+        "label": "爪字部",
+        "strokes": 4,
+        "category": "字头",
+        "glyphId": "radical-086"
+      },
+      {
+        "code": "B087",
+        "char": "父",
+        "label": "父字部",
+        "strokes": 4,
+        "category": "独体与其他",
+        "glyphId": "radical-087"
+      },
+      {
+        "code": "B088",
+        "char": "月",
+        "label": "月字部",
+        "strokes": 4,
+        "category": "左旁",
+        "glyphId": "radical-088"
+      },
+      {
+        "code": "B089",
+        "char": "氏",
+        "label": "氏字部",
+        "strokes": 4,
+        "category": "独体与其他",
+        "glyphId": "radical-089"
+      },
+      {
+        "code": "B090",
+        "char": "欠",
+        "label": "欠字部",
+        "strokes": 4,
+        "category": "右旁",
+        "glyphId": "radical-090"
+      },
+      {
+        "code": "B091",
+        "char": "风",
+        "label": "风字部",
+        "strokes": 4,
+        "category": "独体与其他",
+        "glyphId": "radical-091"
+      },
+      {
+        "code": "B092",
+        "char": "殳",
+        "label": "殳字部",
+        "strokes": 4,
+        "category": "右旁",
+        "glyphId": "radical-092"
+      },
+      {
+        "code": "B093",
+        "char": "文",
+        "label": "文字部",
+        "strokes": 4,
+        "category": "独体与其他",
+        "glyphId": "radical-093"
+      },
+      {
+        "code": "B094",
+        "char": "方",
+        "label": "方字部",
+        "strokes": 4,
+        "category": "独体与其他",
+        "glyphId": "radical-094"
+      },
+      {
+        "code": "B095",
+        "char": "火",
+        "label": "火字部",
+        "strokes": 4,
+        "category": "独体与其他",
+        "glyphId": "radical-095"
+      },
+      {
+        "code": "B096",
+        "char": "斗",
+        "label": "斗字部",
+        "strokes": 4,
+        "category": "独体与其他",
+        "glyphId": "radical-096"
+      },
+      {
+        "code": "B097",
+        "char": "户",
+        "label": "户字部",
+        "strokes": 4,
+        "category": "包围",
+        "glyphId": "radical-097"
+      },
+      {
+        "code": "B098",
+        "char": "心",
+        "label": "心字部",
+        "strokes": 4,
+        "category": "字底",
+        "glyphId": "radical-098"
+      },
+      {
+        "code": "B099",
+        "char": "毋",
+        "label": "毋字部",
+        "strokes": 4,
+        "category": "独体与其他",
+        "glyphId": "radical-099"
+      },
+      {
+        "code": "B100",
+        "char": "示",
+        "label": "示字部",
+        "strokes": 5,
+        "category": "左旁",
+        "glyphId": "radical-100"
+      },
+      {
+        "code": "B101",
+        "char": "甘",
+        "label": "甘字部",
+        "strokes": 5,
+        "category": "独体与其他",
+        "glyphId": "radical-101"
+      },
+      {
+        "code": "B102",
+        "char": "石",
+        "label": "石字部",
+        "strokes": 5,
+        "category": "左旁",
+        "glyphId": "radical-102"
+      },
+      {
+        "code": "B103",
+        "char": "龙",
+        "label": "龙字部",
+        "strokes": 5,
+        "category": "独体与其他",
+        "glyphId": "radical-103"
+      },
+      {
+        "code": "B104",
+        "char": "业",
+        "label": "业字部",
+        "strokes": 5,
+        "category": "独体与其他",
+        "glyphId": "radical-104"
+      },
+      {
+        "code": "B105",
+        "char": "目",
+        "label": "目字部",
+        "strokes": 5,
+        "category": "左旁",
+        "glyphId": "radical-105"
+      },
+      {
+        "code": "B106",
+        "char": "田",
+        "label": "田字部",
+        "strokes": 5,
+        "category": "独体与其他",
+        "glyphId": "radical-106"
+      },
+      {
+        "code": "B107",
+        "char": "罒",
+        "label": "四字头",
+        "strokes": 5,
+        "category": "字头",
+        "glyphId": "radical-107"
+      },
+      {
+        "code": "B108",
+        "char": "皿",
+        "label": "皿字部",
+        "strokes": 5,
+        "category": "字底",
+        "glyphId": "radical-108"
+      },
+      {
+        "code": "B109",
+        "char": "生",
+        "label": "生字部",
+        "strokes": 5,
+        "category": "独体与其他",
+        "glyphId": "radical-109"
+      },
+      {
+        "code": "B110",
+        "char": "矢",
+        "label": "矢字部",
+        "strokes": 5,
+        "category": "左旁",
+        "glyphId": "radical-110"
+      },
+      {
+        "code": "B111",
+        "char": "禾",
+        "label": "禾字部",
+        "strokes": 5,
+        "category": "左旁",
+        "glyphId": "radical-111"
+      },
+      {
+        "code": "B112",
+        "char": "白",
+        "label": "白字部",
+        "strokes": 5,
+        "category": "独体与其他",
+        "glyphId": "radical-112"
+      },
+      {
+        "code": "B113",
+        "char": "瓜",
+        "label": "瓜字部",
+        "strokes": 5,
+        "category": "独体与其他",
+        "glyphId": "radical-113"
+      },
+      {
+        "code": "B114",
+        "char": "鸟",
+        "label": "鸟字部",
+        "strokes": 5,
+        "category": "左旁",
+        "glyphId": "radical-114"
+      },
+      {
+        "code": "B115",
+        "char": "疒",
+        "label": "病字旁",
+        "strokes": 5,
+        "category": "包围",
+        "glyphId": "radical-115"
+      },
+      {
+        "code": "B116",
+        "char": "立",
+        "label": "立字部",
+        "strokes": 5,
+        "category": "独体与其他",
+        "glyphId": "radical-116"
+      },
+      {
+        "code": "B117",
+        "char": "穴",
+        "label": "穴字部",
+        "strokes": 5,
+        "category": "字头",
+        "glyphId": "radical-117"
+      },
+      {
+        "code": "B118",
+        "char": "疋",
+        "label": "疋字部",
+        "strokes": 5,
+        "category": "独体与其他",
+        "glyphId": "radical-118"
+      },
+      {
+        "code": "B119",
+        "char": "皮",
+        "label": "皮字部",
+        "strokes": 5,
+        "category": "独体与其他",
+        "glyphId": "radical-119"
+      },
+      {
+        "code": "B120",
+        "char": "癶",
+        "label": "登字头",
+        "strokes": 5,
+        "category": "独体与其他",
+        "glyphId": "radical-120"
+      },
+      {
+        "code": "B121",
+        "char": "矛",
+        "label": "矛字部",
+        "strokes": 5,
+        "category": "独体与其他",
+        "glyphId": "radical-121"
+      },
+      {
+        "code": "B122",
+        "char": "耒",
+        "label": "耒字部",
+        "strokes": 6,
+        "category": "左旁",
+        "glyphId": "radical-122"
+      },
+      {
+        "code": "B123",
+        "char": "老",
+        "label": "老字部",
+        "strokes": 6,
+        "category": "字头",
+        "glyphId": "radical-123"
+      },
+      {
+        "code": "B124",
+        "char": "耳",
+        "label": "耳字部",
+        "strokes": 6,
+        "category": "左旁",
+        "glyphId": "radical-124"
+      },
+      {
+        "code": "B125",
+        "char": "臣",
+        "label": "臣字部",
+        "strokes": 6,
+        "category": "独体与其他",
+        "glyphId": "radical-125"
+      },
+      {
+        "code": "B126",
+        "char": "西",
+        "label": "西字部",
+        "strokes": 6,
+        "category": "独体与其他",
+        "glyphId": "radical-126"
+      },
+      {
+        "code": "B127",
+        "char": "而",
+        "label": "而字部",
+        "strokes": 6,
+        "category": "独体与其他",
+        "glyphId": "radical-127"
+      },
+      {
+        "code": "B128",
+        "char": "页",
+        "label": "页字部",
+        "strokes": 6,
+        "category": "右旁",
+        "glyphId": "radical-128"
+      },
+      {
+        "code": "B129",
+        "char": "至",
+        "label": "至字部",
+        "strokes": 6,
+        "category": "独体与其他",
+        "glyphId": "radical-129"
+      },
+      {
+        "code": "B130",
+        "char": "虍",
+        "label": "虎字头",
+        "strokes": 6,
+        "category": "字头",
+        "glyphId": "radical-130"
+      },
+      {
+        "code": "B131",
+        "char": "虫",
+        "label": "虫字部",
+        "strokes": 6,
+        "category": "左旁",
+        "glyphId": "radical-131"
+      },
+      {
+        "code": "B132",
+        "char": "肉",
+        "label": "肉字部",
+        "strokes": 6,
+        "category": "独体与其他",
+        "glyphId": "radical-132"
+      },
+      {
+        "code": "B133",
+        "char": "缶",
+        "label": "缶字部",
+        "strokes": 6,
+        "category": "左旁",
+        "glyphId": "radical-133"
+      },
+      {
+        "code": "B134",
+        "char": "舌",
+        "label": "舌字部",
+        "strokes": 6,
+        "category": "独体与其他",
+        "glyphId": "radical-134"
+      },
+      {
+        "code": "B135",
+        "char": "竹",
+        "label": "竹字部",
+        "strokes": 6,
+        "category": "字头",
+        "glyphId": "radical-135"
+      },
+      {
+        "code": "B136",
+        "char": "臼",
+        "label": "臼字部",
+        "strokes": 6,
+        "category": "独体与其他",
+        "glyphId": "radical-136"
+      },
+      {
+        "code": "B137",
+        "char": "自",
+        "label": "自字部",
+        "strokes": 6,
+        "category": "独体与其他",
+        "glyphId": "radical-137"
+      },
+      {
+        "code": "B138",
+        "char": "血",
+        "label": "血字部",
+        "strokes": 6,
+        "category": "独体与其他",
+        "glyphId": "radical-138"
+      },
+      {
+        "code": "B139",
+        "char": "舟",
+        "label": "舟字部",
+        "strokes": 6,
+        "category": "左旁",
+        "glyphId": "radical-139"
+      },
+      {
+        "code": "B140",
+        "char": "色",
+        "label": "色字部",
+        "strokes": 6,
+        "category": "独体与其他",
+        "glyphId": "radical-140"
+      },
+      {
+        "code": "B141",
+        "char": "齐",
+        "label": "齐字部",
+        "strokes": 6,
+        "category": "独体与其他",
+        "glyphId": "radical-141"
+      },
+      {
+        "code": "B142",
+        "char": "衣",
+        "label": "衣字部",
+        "strokes": 6,
+        "category": "左旁",
+        "glyphId": "radical-142"
+      },
+      {
+        "code": "B143",
+        "char": "羊",
+        "label": "羊字部",
+        "strokes": 6,
+        "category": "独体与其他",
+        "glyphId": "radical-143"
+      },
+      {
+        "code": "B144",
+        "char": "米",
+        "label": "米字部",
+        "strokes": 6,
+        "category": "左旁",
+        "glyphId": "radical-144"
+      },
+      {
+        "code": "B145",
+        "char": "聿",
+        "label": "聿字部",
+        "strokes": 6,
+        "category": "独体与其他",
+        "glyphId": "radical-145"
+      },
+      {
+        "code": "B146",
+        "char": "艮",
+        "label": "艮字部",
+        "strokes": 6,
+        "category": "独体与其他",
+        "glyphId": "radical-146"
+      },
+      {
+        "code": "B147",
+        "char": "羽",
+        "label": "羽字部",
+        "strokes": 6,
+        "category": "字底",
+        "glyphId": "radical-147"
+      },
+      {
+        "code": "B148",
+        "char": "糸",
+        "label": "糸字部",
+        "strokes": 6,
+        "category": "左旁",
+        "glyphId": "radical-148"
+      },
+      {
+        "code": "B149",
+        "char": "麦",
+        "label": "麦字部",
+        "strokes": 7,
+        "category": "独体与其他",
+        "glyphId": "radical-149"
+      },
+      {
+        "code": "B150",
+        "char": "走",
+        "label": "走字部",
+        "strokes": 7,
+        "category": "独体与其他",
+        "glyphId": "radical-150"
+      },
+      {
+        "code": "B151",
+        "char": "赤",
+        "label": "赤字部",
+        "strokes": 7,
+        "category": "独体与其他",
+        "glyphId": "radical-151"
+      },
+      {
+        "code": "B152",
+        "char": "豆",
+        "label": "豆字部",
+        "strokes": 7,
+        "category": "独体与其他",
+        "glyphId": "radical-152"
+      },
+      {
+        "code": "B153",
+        "char": "酉",
+        "label": "酉字部",
+        "strokes": 7,
+        "category": "独体与其他",
+        "glyphId": "radical-153"
+      },
+      {
+        "code": "B154",
+        "char": "辰",
+        "label": "辰字部",
+        "strokes": 7,
+        "category": "独体与其他",
+        "glyphId": "radical-154"
+      },
+      {
+        "code": "B155",
+        "char": "豕",
+        "label": "豕字部",
+        "strokes": 7,
+        "category": "独体与其他",
+        "glyphId": "radical-155"
+      },
+      {
+        "code": "B156",
+        "char": "卤",
+        "label": "卤字部",
+        "strokes": 7,
+        "category": "独体与其他",
+        "glyphId": "radical-156"
+      },
+      {
+        "code": "B157",
+        "char": "里",
+        "label": "里字部",
+        "strokes": 7,
+        "category": "独体与其他",
+        "glyphId": "radical-157"
+      },
+      {
+        "code": "B158",
+        "char": "足",
+        "label": "足字部",
+        "strokes": 7,
+        "category": "字底",
+        "glyphId": "radical-158"
+      },
+      {
+        "code": "B159",
+        "char": "邑",
+        "label": "邑字部",
+        "strokes": 7,
+        "category": "右旁",
+        "glyphId": "radical-159"
+      },
+      {
+        "code": "B160",
+        "char": "身",
+        "label": "身字部",
+        "strokes": 7,
+        "category": "独体与其他",
+        "glyphId": "radical-160"
+      },
+      {
+        "code": "B161",
+        "char": "釆",
+        "label": "釆字部",
+        "strokes": 7,
+        "category": "独体与其他",
+        "glyphId": "radical-161"
+      },
+      {
+        "code": "B162",
+        "char": "谷",
+        "label": "谷字部",
+        "strokes": 7,
+        "category": "独体与其他",
+        "glyphId": "radical-162"
+      },
+      {
+        "code": "B163",
+        "char": "豸",
+        "label": "豸字部",
+        "strokes": 7,
+        "category": "独体与其他",
+        "glyphId": "radical-163"
+      },
+      {
+        "code": "B164",
+        "char": "龟",
+        "label": "龟字部",
+        "strokes": 7,
+        "category": "独体与其他",
+        "glyphId": "radical-164"
+      },
+      {
+        "code": "B165",
+        "char": "角",
+        "label": "角字部",
+        "strokes": 7,
+        "category": "独体与其他",
+        "glyphId": "radical-165"
+      },
+      {
+        "code": "B166",
+        "char": "言",
+        "label": "言字部",
+        "strokes": 7,
+        "category": "左旁",
+        "glyphId": "radical-166"
+      },
+      {
+        "code": "B167",
+        "char": "辛",
+        "label": "辛字部",
+        "strokes": 7,
+        "category": "左旁",
+        "glyphId": "radical-167"
+      },
+      {
+        "code": "B168",
+        "char": "青",
+        "label": "青字部",
+        "strokes": 8,
+        "category": "独体与其他",
+        "glyphId": "radical-168"
+      },
+      {
+        "code": "B169",
+        "char": "龺",
+        "label": "朝字旁",
+        "strokes": 8,
+        "category": "字头",
+        "glyphId": "radical-169"
+      },
+      {
+        "code": "B170",
+        "char": "雨",
+        "label": "雨字部",
+        "strokes": 8,
+        "category": "字头",
+        "glyphId": "radical-170"
+      },
+      {
+        "code": "B171",
+        "char": "非",
+        "label": "非字部",
+        "strokes": 8,
+        "category": "独体与其他",
+        "glyphId": "radical-171"
+      },
+      {
+        "code": "B172",
+        "char": "齿",
+        "label": "齿字部",
+        "strokes": 8,
+        "category": "左旁",
+        "glyphId": "radical-172"
+      },
+      {
+        "code": "B173",
+        "char": "黾",
+        "label": "黾字部",
+        "strokes": 8,
+        "category": "独体与其他",
+        "glyphId": "radical-173"
+      },
+      {
+        "code": "B174",
+        "char": "隹",
+        "label": "隹字部",
+        "strokes": 8,
+        "category": "右旁",
+        "glyphId": "radical-174"
+      },
+      {
+        "code": "B175",
+        "char": "阜",
+        "label": "阜字部",
+        "strokes": 8,
+        "category": "左旁",
+        "glyphId": "radical-175"
+      },
+      {
+        "code": "B176",
+        "char": "金",
+        "label": "金字部",
+        "strokes": 8,
+        "category": "左旁",
+        "glyphId": "radical-176"
+      },
+      {
+        "code": "B177",
+        "char": "鱼",
+        "label": "鱼字部",
+        "strokes": 8,
+        "category": "左旁",
+        "glyphId": "radical-177"
+      },
+      {
+        "code": "B178",
+        "char": "隶",
+        "label": "隶字部",
+        "strokes": 8,
+        "category": "独体与其他",
+        "glyphId": "radical-178"
+      },
+      {
+        "code": "B179",
+        "char": "革",
+        "label": "革字部",
+        "strokes": 9,
+        "category": "左旁",
+        "glyphId": "radical-179"
+      },
+      {
+        "code": "B180",
+        "char": "面",
+        "label": "面字部",
+        "strokes": 9,
+        "category": "独体与其他",
+        "glyphId": "radical-180"
+      },
+      {
+        "code": "B181",
+        "char": "韭",
+        "label": "韭字部",
+        "strokes": 9,
+        "category": "独体与其他",
+        "glyphId": "radical-181"
+      },
+      {
+        "code": "B182",
+        "char": "骨",
+        "label": "骨字部",
+        "strokes": 9,
+        "category": "左旁",
+        "glyphId": "radical-182"
+      },
+      {
+        "code": "B183",
+        "char": "香",
+        "label": "香字部",
+        "strokes": 9,
+        "category": "独体与其他",
+        "glyphId": "radical-183"
+      },
+      {
+        "code": "B184",
+        "char": "鬼",
+        "label": "鬼字部",
+        "strokes": 9,
+        "category": "独体与其他",
+        "glyphId": "radical-184"
+      },
+      {
+        "code": "B185",
+        "char": "食",
+        "label": "食字部",
+        "strokes": 9,
+        "category": "左旁",
+        "glyphId": "radical-185"
+      },
+      {
+        "code": "B186",
+        "char": "音",
+        "label": "音字部",
+        "strokes": 9,
+        "category": "独体与其他",
+        "glyphId": "radical-186"
+      },
+      {
+        "code": "B187",
+        "char": "首",
+        "label": "首字部",
+        "strokes": 9,
+        "category": "独体与其他",
+        "glyphId": "radical-187"
+      },
+      {
+        "code": "B188",
+        "char": "髟",
+        "label": "髟字头",
+        "strokes": 10,
+        "category": "字头",
+        "glyphId": "radical-188"
+      },
+      {
+        "code": "B189",
+        "char": "鬲",
+        "label": "鬲字部",
+        "strokes": 10,
+        "category": "独体与其他",
+        "glyphId": "radical-189"
+      },
+      {
+        "code": "B190",
+        "char": "鬯",
+        "label": "鬯字部",
+        "strokes": 10,
+        "category": "独体与其他",
+        "glyphId": "radical-190"
+      },
+      {
+        "code": "B191",
+        "char": "高",
+        "label": "高字部",
+        "strokes": 10,
+        "category": "独体与其他",
+        "glyphId": "radical-191"
+      },
+      {
+        "code": "B192",
+        "char": "黄",
+        "label": "黄字部",
+        "strokes": 11,
+        "category": "独体与其他",
+        "glyphId": "radical-192"
+      },
+      {
+        "code": "B193",
+        "char": "麻",
+        "label": "麻字部",
+        "strokes": 11,
+        "category": "独体与其他",
+        "glyphId": "radical-193"
+      },
+      {
+        "code": "B194",
+        "char": "鹿",
+        "label": "鹿字部",
+        "strokes": 11,
+        "category": "独体与其他",
+        "glyphId": "radical-194"
+      },
+      {
+        "code": "B195",
+        "char": "鼎",
+        "label": "鼎字部",
+        "strokes": 12,
+        "category": "独体与其他",
+        "glyphId": "radical-195"
+      },
+      {
+        "code": "B196",
+        "char": "黑",
+        "label": "黑字部",
+        "strokes": 12,
+        "category": "独体与其他",
+        "glyphId": "radical-196"
+      },
+      {
+        "code": "B197",
+        "char": "黍",
+        "label": "黍字部",
+        "strokes": 12,
+        "category": "独体与其他",
+        "glyphId": "radical-197"
+      },
+      {
+        "code": "B198",
+        "char": "鼓",
+        "label": "鼓字部",
+        "strokes": 13,
+        "category": "独体与其他",
+        "glyphId": "radical-198"
+      },
+      {
+        "code": "B199",
+        "char": "鼠",
+        "label": "鼠字部",
+        "strokes": 13,
+        "category": "独体与其他",
+        "glyphId": "radical-199"
+      },
+      {
+        "code": "B200",
+        "char": "鼻",
+        "label": "鼻字部",
+        "strokes": 14,
+        "category": "独体与其他",
+        "glyphId": "radical-200"
+      },
+      {
+        "code": "B201",
+        "char": "龠",
+        "label": "龠字部",
+        "strokes": 17,
+        "category": "独体与其他",
+        "glyphId": "radical-201"
+      },
+      {
+        "code": "B002-1",
+        "parent": "B002",
+        "char": "亅",
+        "label": "竖钩",
+        "strokes": 1,
+        "category": "独体与其他",
+        "glyphId": "radical-002-1"
+      },
+      {
+        "code": "B005-1",
+        "parent": "B005",
+        "char": "乙",
+        "label": "乙字部",
+        "strokes": 1,
+        "category": "独体与其他",
+        "glyphId": "radical-005-1"
+      },
+      {
+        "code": "B005-2",
+        "parent": "B005",
+        "char": "乚",
+        "label": "竖弯钩形",
+        "strokes": 1,
+        "category": "独体与其他",
+        "glyphId": "radical-005-2"
+      },
+      {
+        "code": "B011-1",
+        "parent": "B011",
+        "char": "丷",
+        "label": "倒八字头",
+        "strokes": 2,
+        "category": "字头",
+        "glyphId": "radical-011-1"
+      },
+      {
+        "code": "B012-1",
+        "parent": "B012",
+        "char": "亻",
+        "label": "单人旁",
+        "strokes": 2,
+        "category": "左旁",
+        "glyphId": "radical-012-1"
+      },
+      {
+        "code": "B013-1",
+        "parent": "B013",
+        "char": "⺈",
+        "label": "角字头",
+        "strokes": 2,
+        "category": "字头",
+        "glyphId": "radical-013-1"
+      },
+      {
+        "code": "B021-1",
+        "parent": "B021",
+        "char": "㔾",
+        "label": "卷字底",
+        "strokes": 2,
+        "category": "字底",
+        "glyphId": "radical-021-1"
+      },
+      {
+        "code": "B022-1",
+        "parent": "B022",
+        "char": "刂",
+        "label": "立刀旁",
+        "strokes": 2,
+        "category": "右旁",
+        "glyphId": "radical-022-1"
+      },
+      {
+        "code": "B029-1",
+        "parent": "B029",
+        "char": "士",
+        "label": "士字部",
+        "strokes": 3,
+        "category": "独体与其他",
+        "glyphId": "radical-029-1"
+      },
+      {
+        "code": "B034-1",
+        "parent": "B034",
+        "char": "兀",
+        "label": "兀字部",
+        "strokes": 3,
+        "category": "独体与其他",
+        "glyphId": "radical-034-1"
+      },
+      {
+        "code": "B036-1",
+        "parent": "B036",
+        "char": "⺌",
+        "label": "小字头",
+        "strokes": 3,
+        "category": "字头",
+        "glyphId": "radical-036-1"
+      },
+      {
+        "code": "B050-1",
+        "parent": "B050",
+        "char": "彑",
+        "label": "彑字头",
+        "strokes": 3,
+        "category": "字头",
+        "glyphId": "radical-050-1"
+      },
+      {
+        "code": "B052-1",
+        "parent": "B052",
+        "char": "已",
+        "label": "已字部",
+        "strokes": 3,
+        "category": "独体与其他",
+        "glyphId": "radical-052-1"
+      },
+      {
+        "code": "B052-2",
+        "parent": "B052",
+        "char": "巳",
+        "label": "巳字部",
+        "strokes": 3,
+        "category": "独体与其他",
+        "glyphId": "radical-052-2"
+      },
+      {
+        "code": "B062-1",
+        "parent": "B062",
+        "char": "旡",
+        "label": "旡字部",
+        "strokes": 4,
+        "category": "独体与其他",
+        "glyphId": "radical-062-1"
+      },
+      {
+        "code": "B066-1",
+        "parent": "B066",
+        "char": "犭",
+        "label": "反犬旁",
+        "strokes": 3,
+        "category": "左旁",
+        "glyphId": "radical-066-1"
+      },
+      {
+        "code": "B074-1",
+        "parent": "B074",
+        "char": "攵",
+        "label": "反文旁",
+        "strokes": 4,
+        "category": "右旁",
+        "glyphId": "radical-074-1"
+      },
+      {
+        "code": "B075-1",
+        "parent": "B075",
+        "char": "曰",
+        "label": "曰字部",
+        "strokes": 4,
+        "category": "独体与其他",
+        "glyphId": "radical-075-1"
+      },
+      {
+        "code": "B077-1",
+        "parent": "B077",
+        "char": "氵",
+        "label": "三点水",
+        "strokes": 3,
+        "category": "左旁",
+        "glyphId": "radical-077-1"
+      },
+      {
+        "code": "B077-2",
+        "parent": "B077",
+        "char": "氺",
+        "label": "水字底",
+        "strokes": 5,
+        "category": "字底",
+        "glyphId": "radical-077-2"
+      },
+      {
+        "code": "B079-1",
+        "parent": "B079",
+        "char": "牜",
+        "label": "牛字旁",
+        "strokes": 4,
+        "category": "左旁",
+        "glyphId": "radical-079-1"
+      },
+      {
+        "code": "B080-1",
+        "parent": "B080",
+        "char": "扌",
+        "label": "提手旁",
+        "strokes": 3,
+        "category": "左旁",
+        "glyphId": "radical-080-1"
+      },
+      {
+        "code": "B086-1",
+        "parent": "B086",
+        "char": "爫",
+        "label": "爪字头",
+        "strokes": 4,
+        "category": "字头",
+        "glyphId": "radical-086-1"
+      },
+      {
+        "code": "B095-1",
+        "parent": "B095",
+        "char": "灬",
+        "label": "四点底",
+        "strokes": 4,
+        "category": "字底",
+        "glyphId": "radical-095-1"
+      },
+      {
+        "code": "B098-1",
+        "parent": "B098",
+        "char": "忄",
+        "label": "竖心旁",
+        "strokes": 3,
+        "category": "左旁",
+        "glyphId": "radical-098-1"
+      },
+      {
+        "code": "B099-1",
+        "parent": "B099",
+        "char": "母",
+        "label": "母字部",
+        "strokes": 5,
+        "category": "独体与其他",
+        "glyphId": "radical-099-1"
+      },
+      {
+        "code": "B100-1",
+        "parent": "B100",
+        "char": "礻",
+        "label": "示字旁",
+        "strokes": 4,
+        "category": "左旁",
+        "glyphId": "radical-100-1"
+      },
+      {
+        "code": "B123-1",
+        "parent": "B123",
+        "char": "耂",
+        "label": "老字头",
+        "strokes": 4,
+        "category": "字头",
+        "glyphId": "radical-123-1"
+      },
+      {
+        "code": "B126-1",
+        "parent": "B126",
+        "char": "覀",
+        "label": "西字头",
+        "strokes": 6,
+        "category": "字头",
+        "glyphId": "radical-126-1"
+      },
+      {
+        "code": "B132-1",
+        "parent": "B132",
+        "char": "⺼",
+        "label": "肉月旁",
+        "strokes": 4,
+        "category": "左旁",
+        "glyphId": "radical-132-1"
+      },
+      {
+        "code": "B135-1",
+        "parent": "B135",
+        "char": "⺮",
+        "label": "竹字头",
+        "strokes": 6,
+        "category": "字头",
+        "glyphId": "radical-135-1"
+      },
+      {
+        "code": "B142-1",
+        "parent": "B142",
+        "char": "衤",
+        "label": "衣字旁",
+        "strokes": 5,
+        "category": "左旁",
+        "glyphId": "radical-142-1"
+      },
+      {
+        "code": "B145-1",
+        "parent": "B145",
+        "char": "肀",
+        "label": "聿字头",
+        "strokes": 4,
+        "category": "字头",
+        "glyphId": "radical-145-1"
+      },
+      {
+        "code": "B148-1",
+        "parent": "B148",
+        "char": "纟",
+        "label": "绞丝旁",
+        "strokes": 3,
+        "category": "左旁",
+        "glyphId": "radical-148-1"
+      },
+      {
+        "code": "B158-1",
+        "parent": "B158",
+        "char": "⻊",
+        "label": "足字旁",
+        "strokes": 7,
+        "category": "左旁",
+        "glyphId": "radical-158-1"
+      },
+      {
+        "code": "B159-1",
+        "parent": "B159",
+        "char": "阝",
+        "label": "右耳旁",
+        "strokes": 2,
+        "category": "右旁",
+        "glyphId": "radical-159-1"
+      },
+      {
+        "code": "B166-1",
+        "parent": "B166",
+        "char": "讠",
+        "label": "言字旁",
+        "strokes": 2,
+        "category": "左旁",
+        "glyphId": "radical-166-1"
+      },
+      {
+        "code": "B175-1",
+        "parent": "B175",
+        "char": "阝",
+        "label": "左耳旁",
+        "strokes": 2,
+        "category": "左旁",
+        "glyphId": "radical-175-1"
+      },
+      {
+        "code": "B176-1",
+        "parent": "B176",
+        "char": "钅",
+        "label": "金字旁",
+        "strokes": 5,
+        "category": "左旁",
+        "glyphId": "radical-176-1"
+      },
+      {
+        "code": "B185-1",
+        "parent": "B185",
+        "char": "饣",
+        "label": "食字旁",
+        "strokes": 3,
+        "category": "左旁",
+        "glyphId": "radical-185-1"
+      },
+      {
+        "code": "B056-1",
+        "parent": "B056",
+        "char": "女",
+        "label": "女字旁",
+        "strokes": 3,
+        "category": "左旁",
+        "glyphId": "radical-056-1"
+      },
+      {
+        "code": "B029-2",
+        "parent": "B029",
+        "char": "土",
+        "label": "提土旁",
+        "strokes": 3,
+        "category": "左旁",
+        "glyphId": "radical-029-2"
+      },
+      {
+        "code": "B061-1",
+        "parent": "B061",
+        "char": "王",
+        "label": "王字旁",
+        "strokes": 4,
+        "category": "左旁",
+        "glyphId": "radical-061-1"
+      },
+      {
+        "code": "B064-1",
+        "parent": "B064",
+        "char": "木",
+        "label": "木字旁",
+        "strokes": 4,
+        "category": "左旁",
+        "glyphId": "radical-064-1"
+      },
+      {
+        "code": "B075-2",
+        "parent": "B075",
+        "char": "日",
+        "label": "日字旁",
+        "strokes": 4,
+        "category": "左旁",
+        "glyphId": "radical-075-2"
+      },
+      {
+        "code": "B088-1",
+        "parent": "B088",
+        "char": "月",
+        "label": "月字旁",
+        "strokes": 4,
+        "category": "左旁",
+        "glyphId": "radical-088-1"
+      },
+      {
+        "code": "B105-1",
+        "parent": "B105",
+        "char": "目",
+        "label": "目字旁",
+        "strokes": 5,
+        "category": "左旁",
+        "glyphId": "radical-105-1"
+      },
+      {
+        "code": "B111-1",
+        "parent": "B111",
+        "char": "禾",
+        "label": "禾字旁",
+        "strokes": 5,
+        "category": "左旁",
+        "glyphId": "radical-111-1"
+      },
+      {
+        "code": "B131-1",
+        "parent": "B131",
+        "char": "虫",
+        "label": "虫字旁",
+        "strokes": 6,
+        "category": "左旁",
+        "glyphId": "radical-131-1"
+      },
+      {
+        "code": "B095-2",
+        "parent": "B095",
+        "char": "火",
+        "label": "火字旁",
+        "strokes": 4,
+        "category": "左旁",
+        "glyphId": "radical-095-2"
+      },
+      {
+        "code": "B144-1",
+        "parent": "B144",
+        "char": "米",
+        "label": "米字旁",
+        "strokes": 6,
+        "category": "左旁",
+        "glyphId": "radical-144-1"
+      },
+      {
+        "code": "B068-1",
+        "parent": "B068",
+        "char": "车",
+        "label": "车字旁",
+        "strokes": 4,
+        "category": "左旁",
+        "glyphId": "radical-068-1"
+      },
+      {
+        "code": "B037-1",
+        "parent": "B037",
+        "char": "口",
+        "label": "口字旁",
+        "strokes": 3,
+        "category": "左旁",
+        "glyphId": "radical-037-1"
+      }
+    ],
+    "strokes": [
+      {
+        "code": "P001",
+        "char": "横",
+        "label": "横",
+        "strokes": 1,
+        "category": "基本笔画",
+        "glyphId": "heng"
+      },
+      {
+        "code": "P002",
+        "char": "竖",
+        "label": "竖",
+        "strokes": 1,
+        "category": "基本笔画",
+        "glyphId": "shu"
+      },
+      {
+        "code": "P003",
+        "char": "撇",
+        "label": "撇",
+        "strokes": 1,
+        "category": "基本笔画",
+        "glyphId": "pie"
+      },
+      {
+        "code": "P004",
+        "char": "捺",
+        "label": "捺",
+        "strokes": 1,
+        "category": "基本笔画",
+        "glyphId": "na"
+      },
+      {
+        "code": "P005",
+        "char": "点",
+        "label": "点",
+        "strokes": 1,
+        "category": "基本笔画",
+        "glyphId": "dian"
+      },
+      {
+        "code": "P006",
+        "char": "提",
+        "label": "提",
+        "strokes": 1,
+        "category": "基本笔画",
+        "glyphId": "ti"
+      },
+      {
+        "code": "P007",
+        "char": "横折",
+        "label": "横折",
+        "strokes": 1,
+        "category": "基本笔画",
+        "glyphId": "hengzhe"
+      },
+      {
+        "code": "P008",
+        "char": "竖折",
+        "label": "竖折",
+        "strokes": 1,
+        "category": "基本笔画",
+        "glyphId": "shuzhe"
+      },
+      {
+        "code": "P009",
+        "char": "横钩",
+        "label": "横钩",
+        "strokes": 1,
+        "category": "基本笔画",
+        "glyphId": "henggou"
+      },
+      {
+        "code": "P010",
+        "char": "竖钩",
+        "label": "竖钩",
+        "strokes": 1,
+        "category": "基本笔画",
+        "glyphId": "shugou"
+      },
+      {
+        "code": "P011",
+        "char": "弯钩",
+        "label": "弯钩",
+        "strokes": 1,
+        "category": "基本笔画",
+        "glyphId": "wangou"
+      },
+      {
+        "code": "P012",
+        "char": "竖弯钩",
+        "label": "竖弯钩",
+        "strokes": 1,
+        "category": "基本笔画",
+        "glyphId": "shuwangou"
+      }
+    ],
+    "groups": [
+      {
+        "code": "G01",
+        "name": "基本笔画一",
+        "codes": [
+          "P001",
+          "P002",
+          "P003",
+          "P004",
+          "P005",
+          "P006"
+        ]
+      },
+      {
+        "code": "G02",
+        "name": "基本笔画二",
+        "codes": [
+          "P007",
+          "P008",
+          "P009",
+          "P010",
+          "P011",
+          "P012"
+        ]
+      },
+      {
+        "code": "G03",
+        "name": "常用左旁一",
+        "codes": [
+          "B012-1",
+          "B077-1",
+          "B080-1",
+          "B166-1",
+          "B098-1",
+          "B064-1"
+        ]
+      },
+      {
+        "code": "G04",
+        "name": "常用左旁二",
+        "codes": [
+          "B056-1",
+          "B029-2",
+          "B061-1",
+          "B148-1",
+          "B176-1",
+          "B066-1"
+        ]
+      },
+      {
+        "code": "G05",
+        "name": "常用左旁三",
+        "codes": [
+          "B075-2",
+          "B088-1",
+          "B105-1",
+          "B111-1",
+          "B131-1",
+          "B095-2"
+        ]
+      },
+      {
+        "code": "G06",
+        "name": "常用左旁四",
+        "codes": [
+          "B185-1",
+          "B100-1",
+          "B142-1",
+          "B018",
+          "B068-1",
+          "B144-1"
+        ]
+      },
+      {
+        "code": "G07",
+        "name": "常用右旁",
+        "codes": [
+          "B022-1",
+          "B074-1",
+          "B128",
+          "B090",
+          "B092",
+          "B021"
+        ]
+      },
+      {
+        "code": "G08",
+        "name": "常用字头一",
+        "codes": [
+          "B030",
+          "B048",
+          "B135-1",
+          "B170",
+          "B107",
+          "B117"
+        ]
+      },
+      {
+        "code": "G09",
+        "name": "常用字头二",
+        "codes": [
+          "B017",
+          "B019",
+          "B046",
+          "B007",
+          "B115",
+          "B097"
+        ]
+      },
+      {
+        "code": "G10",
+        "name": "常用字底",
+        "codes": [
+          "B098",
+          "B095-1",
+          "B108",
+          "B032",
+          "B014",
+          "B016"
+        ]
+      },
+      {
+        "code": "G11",
+        "name": "包围部件一",
+        "codes": [
+          "B038",
+          "B047",
+          "B008",
+          "B013",
+          "B020",
+          "B010"
+        ]
+      },
+      {
+        "code": "G12",
+        "name": "包围部件二",
+        "codes": [
+          "B049",
+          "B026",
+          "B051",
+          "B081",
+          "B046",
+          "B007"
+        ]
+      },
+      {
+        "code": "G13",
+        "name": "左右双耳旁",
+        "codes": [
+          "B175-1",
+          "B159-1"
+        ]
+      },
+      {
+        "code": "G14",
+        "name": "左旁分类 1",
+        "codes": [
+          "B012",
+          "B029",
+          "B040",
+          "B041",
+          "B045",
+          "B056"
+        ]
+      },
+      {
+        "code": "G15",
+        "name": "左旁分类 2",
+        "codes": [
+          "B058",
+          "B061",
+          "B063",
+          "B064",
+          "B066",
+          "B067"
+        ]
+      },
+      {
+        "code": "G16",
+        "name": "左旁分类 3",
+        "codes": [
+          "B068",
+          "B075",
+          "B076",
+          "B077",
+          "B079",
+          "B080"
+        ]
+      },
+      {
+        "code": "G17",
+        "name": "左旁分类 4",
+        "codes": [
+          "B084",
+          "B085",
+          "B088",
+          "B100",
+          "B102",
+          "B105"
+        ]
+      },
+      {
+        "code": "G18",
+        "name": "左旁分类 5",
+        "codes": [
+          "B110",
+          "B111",
+          "B114",
+          "B122",
+          "B124",
+          "B131"
+        ]
+      },
+      {
+        "code": "G19",
+        "name": "左旁分类 6",
+        "codes": [
+          "B133",
+          "B139",
+          "B142",
+          "B144",
+          "B148",
+          "B166"
+        ]
+      },
+      {
+        "code": "G20",
+        "name": "左旁分类 7",
+        "codes": [
+          "B167",
+          "B172",
+          "B175",
+          "B176",
+          "B177",
+          "B179"
+        ]
+      },
+      {
+        "code": "G21",
+        "name": "左旁分类 8",
+        "codes": [
+          "B182",
+          "B185",
+          "B012-1",
+          "B066-1",
+          "B077-1",
+          "B079-1"
+        ]
+      },
+      {
+        "code": "G22",
+        "name": "左旁分类 9",
+        "codes": [
+          "B080-1",
+          "B098-1",
+          "B100-1",
+          "B132-1",
+          "B142-1",
+          "B148-1"
+        ]
+      },
+      {
+        "code": "G23",
+        "name": "左旁分类 10",
+        "codes": [
+          "B158-1",
+          "B166-1",
+          "B175-1",
+          "B176-1",
+          "B185-1",
+          "B056-1"
+        ]
+      },
+      {
+        "code": "G24",
+        "name": "左旁分类 11",
+        "codes": [
+          "B029-2",
+          "B061-1",
+          "B064-1",
+          "B075-2",
+          "B088-1",
+          "B105-1"
+        ]
+      },
+      {
+        "code": "G25",
+        "name": "左旁分类 12",
+        "codes": [
+          "B111-1",
+          "B131-1",
+          "B095-2",
+          "B144-1",
+          "B068-1",
+          "B037-1"
+        ]
+      },
+      {
+        "code": "G26",
+        "name": "右旁分类 1",
+        "codes": [
+          "B021",
+          "B022",
+          "B023",
+          "B065",
+          "B074",
+          "B090"
+        ]
+      },
+      {
+        "code": "G27",
+        "name": "右旁分类 2",
+        "codes": [
+          "B092",
+          "B128",
+          "B159",
+          "B174",
+          "B022-1",
+          "B074-1"
+        ]
+      },
+      {
+        "code": "G28",
+        "name": "右旁分类 3",
+        "codes": [
+          "B159-1"
+        ]
+      },
+      {
+        "code": "G29",
+        "name": "字头分类 1",
+        "codes": [
+          "B017",
+          "B019",
+          "B030",
+          "B048",
+          "B050",
+          "B086"
+        ]
+      },
+      {
+        "code": "G30",
+        "name": "字头分类 2",
+        "codes": [
+          "B107",
+          "B117",
+          "B123",
+          "B130",
+          "B135",
+          "B169"
+        ]
+      },
+      {
+        "code": "G31",
+        "name": "字头分类 3",
+        "codes": [
+          "B170",
+          "B188",
+          "B011-1",
+          "B013-1",
+          "B036-1",
+          "B050-1"
+        ]
+      },
+      {
+        "code": "G32",
+        "name": "字头分类 4",
+        "codes": [
+          "B086-1",
+          "B123-1",
+          "B126-1",
+          "B135-1",
+          "B145-1"
+        ]
+      },
+      {
+        "code": "G33",
+        "name": "字底分类 1",
+        "codes": [
+          "B014",
+          "B016",
+          "B032",
+          "B098",
+          "B108",
+          "B147"
+        ]
+      },
+      {
+        "code": "G34",
+        "name": "字底分类 2",
+        "codes": [
+          "B158",
+          "B021-1",
+          "B077-2",
+          "B095-1"
+        ]
+      },
+      {
+        "code": "G35",
+        "name": "包围分类 1",
+        "codes": [
+          "B007",
+          "B008",
+          "B010",
+          "B013",
+          "B020",
+          "B026"
+        ]
+      },
+      {
+        "code": "G36",
+        "name": "包围分类 2",
+        "codes": [
+          "B038",
+          "B046",
+          "B047",
+          "B049",
+          "B051",
+          "B081"
+        ]
+      },
+      {
+        "code": "G37",
+        "name": "包围分类 3",
+        "codes": [
+          "B097",
+          "B115"
+        ]
+      },
+      {
+        "code": "G38",
+        "name": "独体与其他分类 1",
+        "codes": [
+          "B001",
+          "B002",
+          "B003",
+          "B004",
+          "B005",
+          "B006"
+        ]
+      },
+      {
+        "code": "G39",
+        "name": "独体与其他分类 2",
+        "codes": [
+          "B009",
+          "B011",
+          "B015",
+          "B018",
+          "B024",
+          "B025"
+        ]
+      },
+      {
+        "code": "G40",
+        "name": "独体与其他分类 3",
+        "codes": [
+          "B027",
+          "B028",
+          "B031",
+          "B033",
+          "B034",
+          "B035"
+        ]
+      },
+      {
+        "code": "G41",
+        "name": "独体与其他分类 4",
+        "codes": [
+          "B036",
+          "B037",
+          "B039",
+          "B042",
+          "B043",
+          "B044"
+        ]
+      },
+      {
+        "code": "G42",
+        "name": "独体与其他分类 5",
+        "codes": [
+          "B052",
+          "B053",
+          "B054",
+          "B055",
+          "B057",
+          "B059"
+        ]
+      },
+      {
+        "code": "G43",
+        "name": "独体与其他分类 6",
+        "codes": [
+          "B060",
+          "B062",
+          "B069",
+          "B070",
+          "B071",
+          "B072"
+        ]
+      },
+      {
+        "code": "G44",
+        "name": "独体与其他分类 7",
+        "codes": [
+          "B073",
+          "B078",
+          "B082",
+          "B083",
+          "B087",
+          "B089"
+        ]
+      },
+      {
+        "code": "G45",
+        "name": "独体与其他分类 8",
+        "codes": [
+          "B091",
+          "B093",
+          "B094",
+          "B095",
+          "B096",
+          "B099"
+        ]
+      },
+      {
+        "code": "G46",
+        "name": "独体与其他分类 9",
+        "codes": [
+          "B101",
+          "B103",
+          "B104",
+          "B106",
+          "B109",
+          "B112"
+        ]
+      },
+      {
+        "code": "G47",
+        "name": "独体与其他分类 10",
+        "codes": [
+          "B113",
+          "B116",
+          "B118",
+          "B119",
+          "B120",
+          "B121"
+        ]
+      },
+      {
+        "code": "G48",
+        "name": "独体与其他分类 11",
+        "codes": [
+          "B125",
+          "B126",
+          "B127",
+          "B129",
+          "B132",
+          "B134"
+        ]
+      },
+      {
+        "code": "G49",
+        "name": "独体与其他分类 12",
+        "codes": [
+          "B136",
+          "B137",
+          "B138",
+          "B140",
+          "B141",
+          "B143"
+        ]
+      },
+      {
+        "code": "G50",
+        "name": "独体与其他分类 13",
+        "codes": [
+          "B145",
+          "B146",
+          "B149",
+          "B150",
+          "B151",
+          "B152"
+        ]
+      },
+      {
+        "code": "G51",
+        "name": "独体与其他分类 14",
+        "codes": [
+          "B153",
+          "B154",
+          "B155",
+          "B156",
+          "B157",
+          "B160"
+        ]
+      },
+      {
+        "code": "G52",
+        "name": "独体与其他分类 15",
+        "codes": [
+          "B161",
+          "B162",
+          "B163",
+          "B164",
+          "B165",
+          "B168"
+        ]
+      },
+      {
+        "code": "G53",
+        "name": "独体与其他分类 16",
+        "codes": [
+          "B171",
+          "B173",
+          "B178",
+          "B180",
+          "B181",
+          "B183"
+        ]
+      },
+      {
+        "code": "G54",
+        "name": "独体与其他分类 17",
+        "codes": [
+          "B184",
+          "B186",
+          "B187",
+          "B189",
+          "B190",
+          "B191"
+        ]
+      },
+      {
+        "code": "G55",
+        "name": "独体与其他分类 18",
+        "codes": [
+          "B192",
+          "B193",
+          "B194",
+          "B195",
+          "B196",
+          "B197"
+        ]
+      },
+      {
+        "code": "G56",
+        "name": "独体与其他分类 19",
+        "codes": [
+          "B198",
+          "B199",
+          "B200",
+          "B201",
+          "B002-1",
+          "B005-1"
+        ]
+      },
+      {
+        "code": "G57",
+        "name": "独体与其他分类 20",
+        "codes": [
+          "B005-2",
+          "B029-1",
+          "B034-1",
+          "B052-1",
+          "B052-2",
+          "B062-1"
+        ]
+      },
+      {
+        "code": "G58",
+        "name": "独体与其他分类 21",
+        "codes": [
+          "B075-1",
+          "B099-1"
+        ]
+      },
+      {
+        "code": "G59",
+        "name": "常用偏旁综合",
+        "codes": [
+          "B012-1",
+          "B077-1",
+          "B080-1",
+          "B166-1",
+          "B098-1",
+          "B064-1",
+          "B056-1",
+          "B029-2",
+          "B061-1",
+          "B148-1",
+          "B176-1",
+          "B066-1",
+          "B075-2",
+          "B088-1",
+          "B105-1",
+          "B111-1",
+          "B131-1",
+          "B095-2",
+          "B185-1",
+          "B100-1",
+          "B142-1",
+          "B018",
+          "B068-1",
+          "B144-1",
+          "B022-1",
+          "B074-1",
+          "B128",
+          "B090"
+        ],
+        "recommended": true
+      },
+      {
+        "code": "G60",
+        "name": "左旁综合 1",
+        "codes": [
+          "B012",
+          "B029",
+          "B040",
+          "B041",
+          "B045",
+          "B056",
+          "B058",
+          "B061",
+          "B063",
+          "B064",
+          "B066",
+          "B067",
+          "B068",
+          "B075",
+          "B076",
+          "B077",
+          "B079",
+          "B080",
+          "B084",
+          "B085",
+          "B088",
+          "B100",
+          "B102",
+          "B105",
+          "B110",
+          "B111",
+          "B114",
+          "B122"
+        ],
+        "recommended": true
+      },
+      {
+        "code": "G61",
+        "name": "左旁综合 2",
+        "codes": [
+          "B124",
+          "B131",
+          "B133",
+          "B139",
+          "B142",
+          "B144",
+          "B148",
+          "B166",
+          "B167",
+          "B172",
+          "B175",
+          "B176",
+          "B177",
+          "B179",
+          "B182",
+          "B185",
+          "B012-1",
+          "B066-1",
+          "B077-1",
+          "B079-1",
+          "B080-1",
+          "B098-1",
+          "B100-1",
+          "B132-1",
+          "B142-1",
+          "B148-1",
+          "B158-1",
+          "B166-1"
+        ],
+        "recommended": true
+      },
+      {
+        "code": "G62",
+        "name": "左旁综合 3",
+        "codes": [
+          "B175-1",
+          "B176-1",
+          "B185-1",
+          "B056-1",
+          "B029-2",
+          "B061-1",
+          "B064-1",
+          "B075-2",
+          "B088-1",
+          "B105-1",
+          "B111-1",
+          "B131-1",
+          "B095-2",
+          "B144-1",
+          "B068-1",
+          "B037-1"
+        ],
+        "recommended": true
+      },
+      {
+        "code": "G63",
+        "name": "右旁综合 1",
+        "codes": [
+          "B021",
+          "B022",
+          "B023",
+          "B065",
+          "B074",
+          "B090",
+          "B092",
+          "B128",
+          "B159",
+          "B174",
+          "B022-1",
+          "B074-1",
+          "B159-1"
+        ],
+        "recommended": true
+      },
+      {
+        "code": "G64",
+        "name": "字头综合 1",
+        "codes": [
+          "B017",
+          "B019",
+          "B030",
+          "B048",
+          "B050",
+          "B086",
+          "B107",
+          "B117",
+          "B123",
+          "B130",
+          "B135",
+          "B169",
+          "B170",
+          "B188",
+          "B011-1",
+          "B013-1",
+          "B036-1",
+          "B050-1",
+          "B086-1",
+          "B123-1",
+          "B126-1",
+          "B135-1",
+          "B145-1"
+        ],
+        "recommended": true
+      },
+      {
+        "code": "G65",
+        "name": "字底综合 1",
+        "codes": [
+          "B014",
+          "B016",
+          "B032",
+          "B098",
+          "B108",
+          "B147",
+          "B158",
+          "B021-1",
+          "B077-2",
+          "B095-1"
+        ],
+        "recommended": true
+      },
+      {
+        "code": "G66",
+        "name": "包围综合 1",
+        "codes": [
+          "B007",
+          "B008",
+          "B010",
+          "B013",
+          "B020",
+          "B026",
+          "B038",
+          "B046",
+          "B047",
+          "B049",
+          "B051",
+          "B081",
+          "B097",
+          "B115"
+        ],
+        "recommended": true
+      },
+      {
+        "code": "G67",
+        "name": "独体与其他综合 1",
+        "codes": [
+          "B001",
+          "B002",
+          "B003",
+          "B004",
+          "B005",
+          "B006",
+          "B009",
+          "B011",
+          "B015",
+          "B018",
+          "B024",
+          "B025",
+          "B027",
+          "B028",
+          "B031",
+          "B033",
+          "B034",
+          "B035",
+          "B036",
+          "B037",
+          "B039",
+          "B042",
+          "B043",
+          "B044",
+          "B052",
+          "B053",
+          "B054",
+          "B055"
+        ],
+        "recommended": true
+      },
+      {
+        "code": "G68",
+        "name": "独体与其他综合 2",
+        "codes": [
+          "B057",
+          "B059",
+          "B060",
+          "B062",
+          "B069",
+          "B070",
+          "B071",
+          "B072",
+          "B073",
+          "B078",
+          "B082",
+          "B083",
+          "B087",
+          "B089",
+          "B091",
+          "B093",
+          "B094",
+          "B095",
+          "B096",
+          "B099",
+          "B101",
+          "B103",
+          "B104",
+          "B106",
+          "B109",
+          "B112",
+          "B113",
+          "B116"
+        ],
+        "recommended": true
+      },
+      {
+        "code": "G69",
+        "name": "独体与其他综合 3",
+        "codes": [
+          "B118",
+          "B119",
+          "B120",
+          "B121",
+          "B125",
+          "B126",
+          "B127",
+          "B129",
+          "B132",
+          "B134",
+          "B136",
+          "B137",
+          "B138",
+          "B140",
+          "B141",
+          "B143",
+          "B145",
+          "B146",
+          "B149",
+          "B150",
+          "B151",
+          "B152",
+          "B153",
+          "B154",
+          "B155",
+          "B156",
+          "B157",
+          "B160"
+        ],
+        "recommended": true
+      },
+      {
+        "code": "G70",
+        "name": "独体与其他综合 4",
+        "codes": [
+          "B161",
+          "B162",
+          "B163",
+          "B164",
+          "B165",
+          "B168",
+          "B171",
+          "B173",
+          "B178",
+          "B180",
+          "B181",
+          "B183",
+          "B184",
+          "B186",
+          "B187",
+          "B189",
+          "B190",
+          "B191",
+          "B192",
+          "B193",
+          "B194",
+          "B195",
+          "B196",
+          "B197",
+          "B198",
+          "B199",
+          "B200",
+          "B201"
+        ],
+        "recommended": true
+      },
+      {
+        "code": "G71",
+        "name": "独体与其他综合 5",
+        "codes": [
+          "B002-1",
+          "B005-1",
+          "B005-2",
+          "B029-1",
+          "B034-1",
+          "B052-1",
+          "B052-2",
+          "B062-1",
+          "B075-1",
+          "B099-1"
+        ],
+        "recommended": true
+      }
+    ]
+  },
   "presets": [
     {
       "id": "numbers-progressive",
@@ -1417,6 +4656,163 @@
             "studentId"
           ],
           "showStars": true
+        },
+        "footer": {
+          "reprint": false,
+          "tip": ""
+        }
+      }
+    },
+    {
+      "id": "dot-control",
+      "name": "点阵控笔",
+      "description": "螺旋、圆转与波浪，示范后沿点阵描写",
+      "kind": "foundations",
+      "capabilities": {
+        "controls": [
+          "orientation",
+          "gridType",
+          "gridColor",
+          "header",
+          "footer",
+          "columns"
+        ]
+      },
+      "document": {
+        "version": 1,
+        "content": {
+          "kind": "foundations",
+          "text": "",
+          "title": "",
+          "studentName": "",
+          "studentClass": "",
+          "studentId": "",
+          "foundationPattern": "dot-control"
+        },
+        "exercise": {
+          "kind": "foundation",
+          "stages": [
+            {
+              "role": "guide",
+              "count": 1
+            },
+            {
+              "role": "dotted",
+              "count": "fill"
+            }
+          ],
+          "traceStyle": "solid",
+          "traceDensity": "normal"
+        },
+        "annotations": {
+          "pinyin": "off",
+          "strokeCount": false,
+          "radical": false,
+          "structure": false
+        },
+        "layout": {
+          "paper": "A4",
+          "orientation": "portrait",
+          "flow": "foundation",
+          "columnDirection": "ltr",
+          "columns": 6,
+          "overflow": "paginate",
+          "poetryLayout": "full"
+        },
+        "grid": {
+          "type": "square",
+          "color": "#78a293"
+        },
+        "style": {
+          "fontId": "device-kaiti",
+          "masterColor": "#111111",
+          "traceColor": "#b8b8b8"
+        },
+        "header": {
+          "enabled": true,
+          "fields": [
+            "name"
+          ],
+          "showStars": false
+        },
+        "footer": {
+          "reprint": false,
+          "tip": ""
+        }
+      }
+    },
+    {
+      "id": "dot-components",
+      "name": "点阵笔画与偏旁",
+      "description": "双栏点阵练习，包含基础笔画和常用偏旁",
+      "kind": "foundations",
+      "capabilities": {
+        "controls": [
+          "orientation",
+          "gridType",
+          "gridColor",
+          "header",
+          "footer",
+          "text",
+          "columns"
+        ]
+      },
+      "document": {
+        "version": 1,
+        "content": {
+          "kind": "foundations",
+          "text": "G59",
+          "title": "",
+          "studentName": "",
+          "studentClass": "",
+          "studentId": "",
+          "foundationPattern": "dot-components"
+        },
+        "exercise": {
+          "kind": "foundation",
+          "stages": [
+            {
+              "role": "guide",
+              "count": 1
+            },
+            {
+              "role": "dotted",
+              "count": "fill"
+            }
+          ],
+          "traceStyle": "solid",
+          "traceDensity": "normal"
+        },
+        "annotations": {
+          "pinyin": "off",
+          "strokeCount": false,
+          "radical": false,
+          "structure": false
+        },
+        "layout": {
+          "paper": "A4",
+          "orientation": "portrait",
+          "flow": "foundation",
+          "columnDirection": "ltr",
+          "columns": 10,
+          "overflow": "paginate",
+          "poetryLayout": "full"
+        },
+        "grid": {
+          "type": "tian",
+          "color": "#78a293"
+        },
+        "style": {
+          "fontId": "device-kaiti",
+          "masterColor": "#111111",
+          "traceColor": "#b8b8b8"
+        },
+        "header": {
+          "enabled": true,
+          "fields": [
+            "name"
+          ],
+          "showStars": false
         },
         "footer": {
           "reprint": false,
