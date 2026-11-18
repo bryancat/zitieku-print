@@ -11,7 +11,7 @@ from urllib.parse import urlencode
 import unicodedata
 import zlib
 
-SCRIPT_VERSION = '0.5.8'
+SCRIPT_VERSION = '0.5.9'
 CONTRACT = json.loads((Path(__file__).resolve().parents[1] / 'references/contract-v2.json').read_text(encoding='utf-8'))
 
 ERROR_MESSAGES = {
@@ -33,6 +33,8 @@ ERROR_MESSAGES = {
     'INVALID_TITLE': 'title 必须是字符串。',
     'INVALID_DIGITS': '数字练习只支持 0–9，可使用空格或换行分隔。',
     'SINGLE_DIGIT_ONLY': '专项练习请输入一个数字。',
+    'INVALID_ENGLISH_LETTERS': '字母练习只支持英文字母 A–Z、a–z，可用空格或换行分隔。',
+    'INVALID_ENGLISH_TEXT': '英文练习只支持英文字母、数字和常见英文标点。',
     'INVALID_GRID': 'grid_type 仅支持 mi、tian 或 square。',
     'UNSUPPORTED_COLUMNS': '当前字帖方案不支持调整每行格数。',
     'INVALID_COLUMNS': 'columns 必须是 4 到 16 的整数。',
@@ -51,7 +53,8 @@ class SkillInputError(ValueError):
         self.code = code
         self.field = field or {
             'MISSING_NAME':'student_name', 'NAME_TOO_LONG':'student_name',
-            'MISSING_CONTENT':'text', 'NO_CJK_CONTENT':'text', 'INVALID_CLASS':'student_class',
+            'MISSING_CONTENT':'text', 'NO_CJK_CONTENT':'text', 'INVALID_DIGITS':'text', 'SINGLE_DIGIT_ONLY':'text',
+            'INVALID_ENGLISH_LETTERS':'text', 'INVALID_ENGLISH_TEXT':'text', 'INVALID_CLASS':'student_class',
             'INVALID_STUDENT_ID':'student_id', 'INVALID_TITLE':'title',
             'INVALID_SOURCE':'source',
         }.get(code)
@@ -134,11 +137,32 @@ def is_han(char):
     return (0x3400 <= code <= 0x4DBF or 0x4E00 <= code <= 0x9FFF or 0xF900 <= code <= 0xFAFF
             or 0x20000 <= code <= 0x323AF)
 
-def content_warnings(text, kind):
+def normalize_english_text(text):
+    out = []
+    for char in text:
+        code = ord(char)
+        if char == '\u3000': out.append(' ')
+        elif 0xff01 <= code <= 0xff5e: out.append(chr(code - 0xfee0))
+        elif char in ('‘', '’'): out.append("'")
+        elif char in ('“', '”'): out.append('"')
+        else: out.append(char)
+    return ''.join(out)
+
+def content_warnings(text, kind, preset=None):
     """The website turns every non-space character into practice cells, so flag what will not be Han."""
     chars = [char for char in text if not char.isspace()]
     if kind == 'numbers':
         if not all(char in '0123456789' for char in unicodedata.normalize('NFKC', ''.join(chars))): fail('INVALID_DIGITS')
+        return []
+    if kind == 'english':
+        normalized = normalize_english_text(text)
+        letter_flow = preset and preset['document']['layout']['flow'] == 'row-per-character'
+        if letter_flow:
+            if not re.fullmatch(r'[A-Za-z\s,，、;；]*', normalized): fail('INVALID_ENGLISH_LETTERS')
+            if not any('A' <= c <= 'Z' or 'a' <= c <= 'z' for c in normalized): fail('MISSING_CONTENT')
+        else:
+            if not re.fullmatch(r'[A-Za-z0-9.,!?\'"":;\-\s]*', normalized): fail('INVALID_ENGLISH_TEXT')
+            if not normalized.strip(): fail('MISSING_CONTENT')
         return []
     if not any(is_han(char) for char in chars): fail('NO_CJK_CONTENT')
     others = [char for char in chars if not is_han(char)]
@@ -197,13 +221,17 @@ def describe_template(template_id):
     elif template_id == 'dot-components':
         fields['text'] = {'type':'string', 'grouped':True, 'catalog':'references/contract-v2.json#radicalCatalog'}
         example['text'] = 'G59\nG60'
-    elif kind != 'foundations' and preset['id'] != 'numbers-copy':
+    elif kind != 'foundations' and preset['id'] not in ('numbers-copy', 'english-blank'):
         required.append('text')
-        fields['text'] = {'type': 'string', 'non_empty': True, 'requires_han': kind != 'numbers'}
-        example['text'] = preset['document']['content']['text'] if kind == 'numbers' else '春夏秋冬'
+        fields['text'] = {'type': 'string', 'non_empty': True, 'requires_han': kind not in ('numbers', 'english')}
+        example['text'] = preset['document']['content']['text'] if kind in ('numbers', 'english') else '春夏秋冬'
     for field, (control, values, _) in TUNING.items():
         if control in preset['capabilities']['controls']:
-            fields[field] = {'allowed_values': ['portrait'] if field == 'orientation' and kind == 'name' else values}
+            allowed = (['portrait'] if field == 'orientation' and kind == 'name'
+                else ['four-line', 'three-line', 'two-line', 'single-line'] if field == 'grid_type' and kind == 'english'
+                else list(range(4, 8)) if field == 'columns' and template_id == 'english-strokes'
+                else values)
+            fields[field] = {'allowed_values': allowed}
     return {'id': template_id, 'name': preset['name'], 'required_fields': required,
             'fields': fields, 'defaults': effective_settings(preset['document']), 'example': example}
 
@@ -246,12 +274,12 @@ def validate(request):
         check(isinstance(request.get('student_id', ''), str), 'INVALID_STUDENT_ID')
     elif preset['id'] == 'dot-components':
         check(valid_radical_groups(request.get('text', '')), 'INVALID_RADICAL_GROUPS', 'text')
-    elif kind != 'foundations' and preset['id'] != 'numbers-copy':
+    elif kind != 'foundations' and preset['id'] not in ('numbers-copy', 'english-blank'):
         text = request.get('text')
         if not isinstance(text, str) or not text.strip(): errors.append(SkillInputError('MISSING_CONTENT'))
         else:
             try:
-                warnings = content_warnings(text, kind)
+                warnings = content_warnings(text, kind, preset)
                 if kind == 'numbers' and preset['id'] == 'numbers-single' and len(''.join(text.split())) != 1: fail('SINGLE_DIGIT_ONLY')
             except SkillInputError as error: errors.append(error)
     check(isinstance(request.get('title', ''), str), 'INVALID_TITLE')
@@ -272,8 +300,8 @@ def create_link(request):
         content['studentId'] = request.get('student_id', '')
     elif preset['id'] == 'dot-components':
         content['text'] = request.get('text', content['text'])
-    elif kind != 'foundations' and preset['id'] != 'numbers-copy':
-        content['text'] = unicodedata.normalize('NFKC', request['text']) if kind == 'numbers' else request['text']
+    elif kind != 'foundations' and preset['id'] not in ('numbers-copy', 'english-blank'):
+        content['text'] = unicodedata.normalize('NFKC', request['text']) if kind == 'numbers' else normalize_english_text(request['text']) if kind == 'english' else request['text']
     if 'title' in request: content['title'] = request['title']
     if 'grid_type' in request: document['grid']['type'] = request['grid_type']
     if 'columns' in request: layout['columns'] = request['columns']
@@ -300,6 +328,15 @@ def create_link(request):
         trace_count = 'fill' if gradient == 'all-trace' else width * 3 // 2 if gradient == 'half' else width * 2
         exercise['stages'] = [{'role':'master','count':1},{'role':'trace','count':trace_count}]
         if gradient != 'all-trace': exercise['stages'].append({'role':'copy','count':'fill'})
+    if kind == 'english' and preset['id'] != 'english-blank':
+        if exercise['kind'] == 'stroke-sequence':
+            p_cols = min(5, max(2, layout['columns'] - 2))
+            exercise['stages'] = ([{'role':'master','count':1},{'role':'trace','count':'fill'}] if gradient == 'all-trace'
+                else [{'role':'master','count':1},{'role':'trace','count':p_cols},{'role':'copy','count':'fill'}])
+        elif layout['flow'] == 'continuous' and gradient is not None:
+            exercise['stages'] = ([{'role':'master','count':1},{'role':'trace','count':'fill'}] if gradient == 'all-trace'
+                else [{'role':'master','count':1},{'role':'trace','count':1},{'role':'copy','count':'fill'}] if gradient == 'half'
+                else [{'role':'master','count':1},{'role':'trace','count':3},{'role':'copy','count':'fill'}])
     document['footer']['reprint'] = False
     # Attribution only: never put names or worksheet text in the query string.
     query = {'from': request.get('source', 'skill'), 'v': SCRIPT_VERSION}

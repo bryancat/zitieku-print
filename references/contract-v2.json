@@ -5602,6 +5602,318 @@
           "tip": ""
         }
       }
+    },
+    {
+      "id": "english-words",
+      "name": "英文单词横线",
+      "description": "支持四线三格、三线格、双线格与单横线，每行一词或短句，示范后描红与留白",
+      "kind": "english",
+      "capabilities": {
+        "controls": [
+          "orientation",
+          "gridColor",
+          "header",
+          "footer",
+          "gridType",
+          "practiceGradient",
+          "traceDensity",
+          "columns"
+        ]
+      },
+      "document": {
+        "version": 1,
+        "content": {
+          "kind": "english",
+          "text": "apple\nbanana\norange",
+          "title": "",
+          "studentName": "",
+          "studentClass": "",
+          "studentId": "",
+          "foundationPattern": "strokes"
+        },
+        "exercise": {
+          "kind": "trace-copy",
+          "stages": [
+            {
+              "role": "master",
+              "count": 1
+            },
+            {
+              "role": "trace",
+              "count": 3
+            },
+            {
+              "role": "copy",
+              "count": "fill"
+            }
+          ],
+          "traceStyle": "solid",
+          "traceDensity": "normal"
+        },
+        "annotations": {
+          "pinyin": "off",
+          "strokeCount": false,
+          "radical": false,
+          "structure": false
+        },
+        "layout": {
+          "paper": "A4",
+          "orientation": "portrait",
+          "flow": "continuous",
+          "columnDirection": "ltr",
+          "columns": 9,
+          "overflow": "paginate",
+          "poetryLayout": "full"
+        },
+        "grid": {
+          "type": "four-line",
+          "color": "#2f9e66"
+        },
+        "style": {
+          "fontId": "device-kaiti",
+          "masterColor": "#111111",
+          "traceColor": "#b8b8b8"
+        },
+        "header": {
+          "enabled": false,
+          "fields": [],
+          "showStars": true
+        },
+        "footer": {
+          "reprint": false,
+          "tip": ""
+        }
+      }
+    },
+    {
+      "id": "english-letters",
+      "name": "英文字母分格",
+      "description": "四线三格分格排列，支持 A–Z、a–z 与 Aa 组合描红",
+      "kind": "english",
+      "capabilities": {
+        "controls": [
+          "orientation",
+          "gridColor",
+          "header",
+          "footer",
+          "practiceGradient",
+          "traceDensity",
+          "columns"
+        ]
+      },
+      "document": {
+        "version": 1,
+        "content": {
+          "kind": "english",
+          "text": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+          "title": "",
+          "studentName": "",
+          "studentClass": "",
+          "studentId": "",
+          "foundationPattern": "strokes"
+        },
+        "exercise": {
+          "kind": "trace-copy",
+          "stages": [
+            {
+              "role": "master",
+              "count": 1
+            },
+            {
+              "role": "trace",
+              "count": "fill"
+            }
+          ],
+          "traceStyle": "solid",
+          "traceDensity": "normal"
+        },
+        "annotations": {
+          "pinyin": "off",
+          "strokeCount": false,
+          "radical": false,
+          "structure": false
+        },
+        "layout": {
+          "paper": "A4",
+          "orientation": "portrait",
+          "flow": "row-per-character",
+          "columnDirection": "ltr",
+          "columns": 7,
+          "overflow": "paginate",
+          "poetryLayout": "full"
+        },
+        "grid": {
+          "type": "four-line",
+          "color": "#ef4444"
+        },
+        "style": {
+          "fontId": "device-kaiti",
+          "masterColor": "#111111",
+          "traceColor": "#b8b8b8"
+        },
+        "header": {
+          "enabled": false,
+          "fields": [],
+          "showStars": true
+        },
+        "footer": {
+          "reprint": false,
+          "tip": ""
+        }
+      }
+    },
+    {
+      "id": "english-strokes",
+      "name": "英文字母笔顺",
+      "description": "左侧大号字母配编号笔顺箭头，右侧双排四线格先描后写",
+      "kind": "english",
+      "capabilities": {
+        "controls": [
+          "orientation",
+          "gridColor",
+          "header",
+          "footer",
+          "practiceGradient",
+          "traceDensity",
+          "columns"
+        ]
+      },
+      "document": {
+        "version": 1,
+        "content": {
+          "kind": "english",
+          "text": "ABCDEFG",
+          "title": "",
+          "studentName": "",
+          "studentClass": "",
+          "studentId": "",
+          "foundationPattern": "strokes"
+        },
+        "exercise": {
+          "kind": "stroke-sequence",
+          "stages": [
+            {
+              "role": "master",
+              "count": 1
+            },
+            {
+              "role": "trace",
+              "count": 3
+            },
+            {
+              "role": "copy",
+              "count": "fill"
+            }
+          ],
+          "traceStyle": "solid",
+          "traceDensity": "normal"
+        },
+        "annotations": {
+          "pinyin": "off",
+          "strokeCount": false,
+          "radical": false,
+          "structure": false
+        },
+        "layout": {
+          "paper": "A4",
+          "orientation": "portrait",
+          "flow": "row-per-character",
+          "columnDirection": "ltr",
+          "columns": 5,
+          "overflow": "paginate",
+          "poetryLayout": "full"
+        },
+        "grid": {
+          "type": "four-line",
+          "color": "#6ab05c"
+        },
+        "style": {
+          "fontId": "device-kaiti",
+          "masterColor": "#111111",
+          "traceColor": "#b8b8b8"
+        },
+        "header": {
+          "enabled": false,
+          "fields": [],
+          "showStars": true
+        },
+        "footer": {
+          "reprint": false,
+          "tip": ""
+        }
+      }
+    },
+    {
+      "id": "english-blank",
+      "name": "空白四线三格",
+      "description": "整页英文横线纸，可切换四线三格、三线格、双线格或单横线",
+      "kind": "english",
+      "capabilities": {
+        "controls": [
+          "orientation",
+          "gridColor",
+          "header",
+          "footer",
+          "gridType",
+          "columns"
+        ]
+      },
+      "document": {
+        "version": 1,
+        "content": {
+          "kind": "english",
+          "text": "",
+          "title": "",
+          "studentName": "",
+          "studentClass": "",
+          "studentId": "",
+          "foundationPattern": "strokes"
+        },
+        "exercise": {
+          "kind": "trace-copy",
+          "stages": [
+            {
+              "role": "copy",
+              "count": "fill"
+            }
+          ],
+          "traceStyle": "solid",
+          "traceDensity": "normal"
+        },
+        "annotations": {
+          "pinyin": "off",
+          "strokeCount": false,
+          "radical": false,
+          "structure": false
+        },
+        "layout": {
+          "paper": "A4",
+          "orientation": "portrait",
+          "flow": "continuous",
+          "columnDirection": "ltr",
+          "columns": 9,
+          "overflow": "paginate",
+          "poetryLayout": "full"
+        },
+        "grid": {
+          "type": "four-line",
+          "color": "#2f9e66"
+        },
+        "style": {
+          "fontId": "device-kaiti",
+          "masterColor": "#111111",
+          "traceColor": "#b8b8b8"
+        },
+        "header": {
+          "enabled": false,
+          "fields": [],
+          "showStars": true
+        },
+        "footer": {
+          "reprint": false,
+          "tip": ""
+        }
+      }
     }
   ]
 }

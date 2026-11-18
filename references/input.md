@@ -11,13 +11,13 @@ Skill 使用规范字帖文档与 v3 链接协议。`contract-v2.json` 由 `js/w
 | 字段 | 要求 |
 |---|---|
 | `template_id` | 必填；来自 `--list-templates` 返回的方案编号 |
-| `text` | 汉字、笔顺、古诗方案必填；非空字符串，至少含一个汉字，保留原文；数字方案必填 0–9，可用空格或换行分隔，支持全角数字 |
+| `text` | 汉字、笔顺、古诗方案必填且至少含一个汉字；数字方案必填 0–9；英文方案必填英文字母或单词短句（`english-blank` 不传 text） |
 | `student_name` | 姓名方案必填，最多 6 个字符；不能与 `text` 同时使用 |
 | `student_class` | 姓名方案可选；仅在用户主动提供并希望显示时使用 |
 | `student_id` | 姓名方案可选；仅在用户主动提供并希望显示时使用 |
 | `title` | 可选字符串；是否显示及布局以网站预览为准 |
-| `grid_type` | 可选：`mi` 米字格、`tian` 田字格、`square` 方格 |
-| `columns` | 可选整数 4–16；仅在方案声明支持时使用，数值越大通常字格越小 |
+| `grid_type` | 可选：中文/数字/控笔为 `mi` 米字格、`tian` 田字格、`square` 方格；英文横线（`english-words`、`english-blank`）为 `four-line` 四线三格、`three-line` 三线格、`two-line` 双线格、`single-line` 单横线 |
+| `columns` | 可选整数 4–16（`english-strokes` 为 4–7，对应右侧 2–5 列练习格）；仅在方案声明支持时使用，数值越大通常字格越小 |
 | `orientation` | 可选：`portrait` 纵向、`landscape` 横向；姓名方案只支持纵向 |
 | `pinyin` | 可选布尔值；开启或关闭声调拼音，仅在方案声明支持时使用 |
 | `trace_style` | 可选：`solid` 实心灰字、`hollow` 空心双钩 |
@@ -60,7 +60,9 @@ Skill 使用规范字帖文档与 v3 链接协议。`contract-v2.json` 由 `js/w
 
 数字综合与专项使用田字格左半格，范字、浅描与点阵使用同一数字路径。`numbers-copy` 为纯空格纸，不传 text；整页无预填数字或口诀。`numbers-single` 只接受一个数字；数字内容错误返回 `INVALID_DIGITS` 或 `SINGLE_DIGIT_ONLY`。不支持数数、填空或加减法。
 
-非数字方案的 `text` 没有汉字时返回 `NO_CJK_CONTENT`。网站会把每个非空白字符都排成练习内容，所以含英文、数字、表情，或在非古诗方案中含标点时，`warnings` 会提示；是否删除由用户决定。
+英文方案统一使用小学标准手写印刷体（不支持 `pinyin`）：`english-words` 按行排列单词或短句并补齐空白横线，支持通过 `grid_type` 切换 `four-line`（四线三格）、`three-line`（三线格）、`two-line`（双线格）或 `single-line`（单横线）；`english-letters` 支持 `A–Z`、`a–z` 与 `Aa` 分格描红；`english-strokes` 左侧展示带编号方向箭头的笔顺示范，右侧上描下写；`english-blank` 无需 `text`，同样支持上述四种横线样式。
+
+非数字、非英文方案的 `text` 没有汉字时返回 `NO_CJK_CONTENT`。网站会把每个非空白字符都排成练习内容，所以含英文、数字、表情，或在非古诗方案中含标点时，`warnings` 会提示；是否删除由用户决定。
 
 单次输入最多读取 100000 个字符；完整状态序列化不能超过 20000 个 UTF-16 单元；编码令牌最长 3000 个字符。这些是协议上限，不是单页容量承诺。新版生成器会按 A4 容量自动分页，但脚本不运行排版和浏览器渲染，因此始终要求在网站预览后再导出。
 
